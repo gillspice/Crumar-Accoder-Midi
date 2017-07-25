@@ -2,7 +2,7 @@
 --	Conversion of Accoder_MIDI.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Jul 23 20:45:34 2017
+--	Mon Jul 24 11:37:42 2017
 --
 
 USE cypress.cypress.all;

@@ -134,6 +134,7 @@ int main()
     Control_Reg_10_Write(0xff);
     Control_Reg_11_Write(0xff);
     
+    Keys_Notes_5_Write(0x40);
     
     
     //Keys_Notes_5_Write(0x40);
@@ -396,8 +397,19 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
                 case 5:
                 
                    Keys_Notes_6_Write(Keys_Notes_6_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-40)));
-                  //  Keys_Notes_4_Write(0x20);
-                    break;           
+                   break;     
+                case 6:
+                
+                   Chords_Notes_Write(Chords_Notes_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-48)));
+                   break;    
+                case 7:
+                
+                   Chords_Bass_Notes_Write(Chords_Bass_Notes_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-56)));
+                   break;    
+                case 8:
+                
+                   Bass_Notes_Write(Bass_Notes_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-64)));
+                   break;                    
             }
             LED_OutA_Write(0);
         }
@@ -408,38 +420,44 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
                 case 0: 
                 
                    Keys_Notes_1_Write(Keys_Notes_1_Read() | 0x01 << midiMsg[USB_EVENT_BYTE1]);
-                   //Keys_Notes_4_Write(0x40);
                     break;
                 
                 case 1:
                 
                    Keys_Notes_2_Write(Keys_Notes_2_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-8)); 
-                   // Keys_Notes_4_Write(0x02);
                     break;
                 
                 case 2:
                 
                    Keys_Notes_3_Write(Keys_Notes_3_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-16));  
-                   // Keys_Notes_4_Write(0x04);
                     break;
                 
                 case 3:
                 
                    Keys_Notes_4_Write(Keys_Notes_4_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-24));
-                  //  Keys_Notes_4_Write(0x08);
                     break;
                 
                 case 4:
                 
                    Keys_Notes_5_Write(Keys_Notes_5_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-32));
-                 //   Keys_Notes_4_Write(0x10);
                     break;
                                 
                 case 5:
                 
                    Keys_Notes_6_Write(Keys_Notes_6_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-40));
-                  //  Keys_Notes_4_Write(0x20);
-                    break;           
+                    break; 
+                case 6:
+                
+                   Chords_Notes_Write(Chords_Notes_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-48));
+                    break; 
+                case 7:
+                
+                   Chords_Bass_Notes_Write(Chords_Bass_Notes_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-56));
+                    break;
+                case 8:
+                
+                   Bass_Notes_Write(Bass_Notes_Read() | 0x01 << (midiMsg[USB_EVENT_BYTE1]-64));
+                    break;                   
             }
 
             LED_OutA_Write(1);

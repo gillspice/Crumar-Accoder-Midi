@@ -1,7 +1,7 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|ddb7cda4-0380-4d06-80f9-944598937dd5
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|4c8e5f84-f6ab-4c17-89b9-7626b6040297
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8517625c-695d-4e54-b442-9f2f160c5863
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|50ff9740-810b-4495-876c-488b38e6d0a9
-C:\Users\214016586\Documents\GitHub\Accoder\Accoder.cydsn\Accoder.cyprj|3a806d67-8874-4e82-b00c-4ac9a0c40006
-C:\Users\214016586\Documents\GitHub\Accoder\Accoder_MIDI.cydsn\Accoder_MIDI.cyprj|a9fe3aca-8b66-4cd5-9879-6f82128a1ce6
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|a782b669-fc05-41d5-b07f-13099f98ec52
+C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder.cydsn\Accoder.cyprj|88a41c25-9a20-424c-b6a5-29aaf5d1b3c4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|40d44b70-c283-46e9-bd0d-02b2e5cf638a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|99050e5a-5114-43c2-8d89-5812d2fba84d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|0fcf81ab-9aab-4e6b-a337-42d73c9bc63b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|b33aa77e-ce9d-495a-bbf9-a8d206b9e7f5
+C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\Accoder_MIDI.cyprj|bb20f509-e5d8-4159-8e2d-dee87746d1ef
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|6db02ebe-c984-4534-bd2b-81524ad719eb

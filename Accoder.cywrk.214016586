@@ -543,55 +543,56 @@
 <v>Accoder\Accoder_MIDI\USBFS_MIDI_PSoC3_5LP.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>Accoder</v>
-<v>Accoder\Accoder</v>
-<v>Accoder\Accoder_MIDI</v>
-<v>Accoder\Accoder_MIDI\TopDesign</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Pins</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Analog</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Clocks</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Interrupts</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\DMA</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\System</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Directives</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Flash Security</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\EEPROM</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cyre</v>
-<v>Accoder\Accoder_MIDI\Header Files</v>
-<v>Accoder\Accoder_MIDI\Header Files\cyapicallbacks.h</v>
-<v>Accoder\Accoder_MIDI\Source Files</v>
-<v>Accoder\Accoder_MIDI\Source Files\main.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\Clock_1</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\Clock_1\Clock_1.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\Clock_1\Clock_1.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CyBootAsmKeil.a51</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CyDmac.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CyDmac.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CyFlash.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CyFlash.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CyLib.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CyLib.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\cymem.a51</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\cypins.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\cyPm.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\cyPm.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CySpc.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\CySpc.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\cytypes.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\cyutils.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\KeilStart.a51</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\PSoC3_8051.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cy_boot\PSoC3_8051.inc</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InA</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InA\LED_InA.c</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InA\LED_InA.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InA\LED_InA_aliases.h</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InB</v>
-<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InB\LED_InB.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB\USB_std.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB\USB_vnd.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dm</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dm\USB_Dm.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dm\USB_Dm.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dm\USB_Dm_aliases.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dp</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dp\USB_Dp.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dp\USB_Dp.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\USB_Dp\USB_Dp_aliases.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cycodeshareexport.ld</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cycodeshareimport.ld</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cycodeshareimport.scat</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cydevice.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cydevice_trm.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cydevicekeil.inc</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cydevicekeil_trm.inc</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cydisabledsheets.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cyfitter.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cyfitter_cfg.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cyfitter_cfg.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\cyfitterkeil.inc</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\project.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Bass_Notes</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Bass_Notes\Bass_Notes.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Bass_Notes\Bass_Notes.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Bass_Notes\Bass_Notes_PM.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Bass_Notes</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Bass_Notes\Chords_Bass_Notes.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Bass_Notes\Chords_Bass_Notes.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Bass_Notes\Chords_Bass_Notes_PM.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Notes</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Notes\Chords_Notes.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Notes\Chords_Notes.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chords_Notes\Chords_Notes_PM.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chorus_Speed</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chorus_Speed\Chorus_Speed.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chorus_Speed\Chorus_Speed.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Chorus_Speed\Chorus_Speed_PM.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\CLK</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\CLK\CLK.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\CLK\CLK.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\CLK\CLK_aliases.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Clock_1</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Control_Reg_10</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Control_Reg_10\Control_Reg_10.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC5\Control_Reg_10\Control_Reg_10.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -984,6 +985,7 @@
 <name v=".\Accoder_MIDI.cydsn\Generated_Source\PSoC5\MIDI_PWR.c" />
 <name v=".\Accoder_MIDI.cydsn\Generated_Source\PSoC5\USB_midi.h" />
 <name v=".\Accoder_MIDI.cydsn\Accoder_MIDI.cydwr" />
+<name v=".\Accoder_MIDI.cydsn\Generated_Source\PSoC5\USB.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -991,7 +993,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1097, 634" SelectedTabbedMdiWindow="6d469e71-d873-4344-a96a-3b13d5eec262"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="3db44666-db6c-4649-9ae7-4d6eae2d2fa3" /><DocumentWindow Key="ebb724e1-a10e-44a9-9bd6-2792ece03413" Guid="0b71901b-a3ce-4a13-a336-eb072731622c" /><DocumentWindow Key="d5b37794-5e97-4dbf-948f-aa0b0b6ff353" Guid="8d0670d5-5281-433d-bffa-d5d8fb25ceb9" /><DocumentWindow Key="85dc11c3-030b-463a-ad72-e8be3bda2a1a" Guid="7b3bbe41-f471-4c31-8683-37860037815f" /><DocumentWindow Key="cefb05af-d4be-46cd-828a-19ed656a9dda" Guid="5557900c-5517-4323-81dd-206c42168ad9" /><DocumentWindow Key="3ec83ac2-9f22-471f-a6c6-c60e91389499" Guid="a7c912d8-8f81-4ccd-b366-8a7c0a4135e4" /><DocumentWindow Key="c47a9e38-cca0-4722-a042-acc833e350fd" Guid="6d469e71-d873-4344-a96a-3b13d5eec262" /><DocumentWindow Key="36498d5b-30a0-4892-92a6-ff841a246048" Guid="94102d27-7327-409e-bfbb-0a965a974770" /><DocumentWindow Key="483afd06-3901-4a69-a7ea-79d4d3376c50" Guid="176a669f-0e24-4f42-85d4-9620c2677856" /><DocumentWindow Key="98fd1dd0-3563-4f5e-81a7-21ca13f151fb" Guid="4f1b9958-dfdb-475c-85b0-c28eeea30c1b" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1097, 634" SelectedTabbedMdiWindow="560ff42f-2dc1-4eea-9458-df7e45170368"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="3db44666-db6c-4649-9ae7-4d6eae2d2fa3" /><DocumentWindow Key="e6d7afb9-7c16-4efd-b808-c6b19be1e0b9" Guid="0f68ede6-37f2-4945-ab9d-8092736dda0e" /><DocumentWindow Key="7d2ff56b-f72a-416f-a619-0ae82c1d0e98" Guid="bbf75ef4-1808-4604-97c8-2fc94a3fa9ec" /><DocumentWindow Key="8d0b8683-0b36-4c4d-9881-6c66872bd675" Guid="24318b04-ac34-4f37-82a8-1d288b01bcff" /><DocumentWindow Key="47f860af-5257-4d4c-a545-8f059443a642" Guid="8be6c9a7-ae93-489d-9ef7-aaee241e9e41" /><DocumentWindow Key="51474f1a-0043-44d8-81a5-1e24dfb59412" Guid="5fa701f0-4428-41a7-95a5-3cfdde7e1391" /><DocumentWindow Key="bfe3e93e-cd89-4aa3-88fc-9da5ee23d089" Guid="560ff42f-2dc1-4eea-9458-df7e45170368" /><DocumentWindow Key="ec0a3fb1-e242-4d0d-87c6-adf92d57a28a" Guid="6ecb194e-7435-4012-b583-24af885a0481" /><DocumentWindow Key="4b73826e-24cc-4aa0-997f-b4ef10e76e9c" Guid="5aef6f76-4d97-4efb-9011-ff861cffbb75" /><DocumentWindow Key="f4a2311d-6a2b-4725-b0f6-b267676bd85e" Guid="89c63976-8ada-4461-b296-4e31b4972769" /><DocumentWindow Key="fa63acbf-e056-451a-a0d3-96c623c4d251" Guid="542f5cd8-2783-4f80-8afc-e97c0e49988e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
