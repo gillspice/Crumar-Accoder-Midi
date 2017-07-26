@@ -543,21 +543,6 @@
 <v>Accoder\Accoder_MIDI\USBFS_MIDI_PSoC3_5LP.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>Accoder</v>
-<v>Accoder\Accoder</v>
-<v>Accoder\Accoder_MIDI</v>
-<v>Accoder\Accoder_MIDI\TopDesign</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Pins</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Analog</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Clocks</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Interrupts</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\DMA</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\System</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Directives</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\Flash Security</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cydwr\EEPROM</v>
-<v>Accoder\Accoder_MIDI\Accoder_MIDI.cyre</v>
 <v>Accoder\Accoder_MIDI\Header Files</v>
 <v>Accoder\Accoder_MIDI\Header Files\cyapicallbacks.h</v>
 <v>Accoder\Accoder_MIDI\Source Files</v>
@@ -592,6 +577,21 @@
 <v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InA\LED_InA_aliases.h</v>
 <v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InB</v>
 <v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InB\LED_InB.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InB\LED_InB.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_InB\LED_InB_aliases.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutA</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutA\LED_OutA.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutA\LED_OutA.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutA\LED_OutA_aliases.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutB</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutB\LED_OutB.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutB\LED_OutB.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\LED_OutB\LED_OutB_aliases.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\MIDI_PWR</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\MIDI_PWR\MIDI_PWR.c</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\MIDI_PWR\MIDI_PWR.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\MIDI_PWR\MIDI_PWR_aliases.h</v>
+<v>Accoder\Accoder_MIDI\Generated_Source\PSoC3\MIDI1_UART</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">

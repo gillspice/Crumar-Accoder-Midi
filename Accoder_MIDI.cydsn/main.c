@@ -132,12 +132,8 @@ int main()
  //   Bass_Notes_Write(0xff);
 //    Chorus_Speed_Write(0xff);
  //   Control_Reg_10_Write(0xff);
- //   Control_Reg_11_Write(0xff);
-    
-  //  Keys_Notes_5_Write(0x40);
-    
-    
-    //Keys_Notes_5_Write(0x40);
+//   Control_Reg_11_Write(0xff);
+   
 
     while(1u)
     {
@@ -356,42 +352,38 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
             }
         }
     }
-    switch (midiMsg[USB_EVENT_BYTE0])
-    //if(midiMsg[USB_EVENT_BYTE0] == USB_MIDI_NOTE_ON)
+    /***************TAG: Start of my code****************************************/
+    switch (midiMsg[USB_EVENT_BYTE0])  //TAG: Event type
+
     {
-    case USB_MIDI_NOTE_ON:
-        if(midiMsg[USB_EVENT_BYTE2] == 0x00)  //Note On with velocity 0 should be treated like note off
+    case USB_MIDI_NOTE_ON:   //TAG: This #define assumes channel 1, should parse channel too, have omni option
+        if(midiMsg[USB_EVENT_BYTE2] == 0x00)  //TAG: Note On with velocity 0 should be treated like note off
         {
-        switch (midiMsg[USB_EVENT_BYTE1]/8)
+        switch (midiMsg[USB_EVENT_BYTE1]/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
             {
                 case 0: 
                 
                    Keys_Notes_1_Write(Keys_Notes_1_Read() & ~(0x01 << midiMsg[USB_EVENT_BYTE1]));
-                   //Keys_Notes_4_Write(0x40);
                     break;
                 
                 case 1:
                 
                    Keys_Notes_2_Write(Keys_Notes_2_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-8))); 
-                   // Keys_Notes_4_Write(0x02);
                     break;
                 
                 case 2:
                 
                    Keys_Notes_3_Write(Keys_Notes_3_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-16)));  
-                   // Keys_Notes_4_Write(0x04);
                     break;
                 
                 case 3:
                 
                    Keys_Notes_4_Write(Keys_Notes_4_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-24)));
-                  //  Keys_Notes_4_Write(0x08);
                     break;
                 
                 case 4:
                 
                    Keys_Notes_5_Write(Keys_Notes_5_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-32)));
-                 //   Keys_Notes_4_Write(0x10);
                     break;
                                 
                 case 5:
@@ -413,9 +405,9 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
             }
             LED_OutA_Write(0);
         }
-        else    
+        else    //TAG: Velocity is not zero, turn on note/bit
         {
-            switch (midiMsg[USB_EVENT_BYTE1]/8)
+            switch (midiMsg[USB_EVENT_BYTE1]/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
             {
                 case 0: 
                 
@@ -464,50 +456,43 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
         }
         break;  
         
-    //if(midiMsg[USB_EVENT_BYTE0] == USB_MIDI_NOTE_OFF)
-    case USB_MIDI_NOTE_OFF:
+    case USB_MIDI_NOTE_OFF:  // TAG: This #define assumes channel 1, should parse channel too, have omni option
         
-        switch (midiMsg[USB_EVENT_BYTE1]/8)
+        switch (midiMsg[USB_EVENT_BYTE1]/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
             {
                 case 0: 
                 
                    Keys_Notes_1_Write(Keys_Notes_1_Read() & ~(0x01 << midiMsg[USB_EVENT_BYTE1]));
-                   //Keys_Notes_4_Write(0x40);
                     break;
                 
                 case 1:
                 
                    Keys_Notes_2_Write(Keys_Notes_2_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-8))); 
-                   // Keys_Notes_4_Write(0x02);
                     break;
                 
                 case 2:
                 
                    Keys_Notes_3_Write(Keys_Notes_3_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-16)));  
-                   // Keys_Notes_4_Write(0x04);
                     break;
                 
                 case 3:
                 
                    Keys_Notes_4_Write(Keys_Notes_4_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-24)));
-                  //  Keys_Notes_4_Write(0x08);
                     break;
                 
                 case 4:
                 
                    Keys_Notes_5_Write(Keys_Notes_5_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-32)));
-                 //   Keys_Notes_4_Write(0x10);
                     break;
                                 
                 case 5:
                 
                    Keys_Notes_6_Write(Keys_Notes_6_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-40)));
-                  //  Keys_Notes_4_Write(0x20);
                     break;           
             }
             LED_OutA_Write(0);
             break;
-    case USB_MIDI_CONTROL_CHANGE:
+    case USB_MIDI_CONTROL_CHANGE: // TAG: This #define assumes channel 1, should parse channel too, have omni option
             switch (midiMsg[USB_EVENT_BYTE1]/8)
             {
                 case 0: 
@@ -557,7 +542,7 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
             }
             break;        
     }
-    
+      /***************TAG: End of my code****************************************/ 
     
     inqFlagsOld = USB_MIDI1_InqFlags;
     cable = cable;
