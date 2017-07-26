@@ -122,19 +122,19 @@ int main()
     USB_Start(DEVICE, USB_DWR_VDDD_OPERATION); 
     
     /*Turn on some tabs*/
-    Tabs_1_Write(0xff);
-    Tabs_2_Write(0xff);
-    Tabs_3_Write(0xff);
-    Tabs_4_Write(0xff);
+//    Tabs_1_Write(0xff);
+//    Tabs_2_Write(0xff);
+//    Tabs_3_Write(0xff);
+//    Tabs_4_Write(0xff);
     
-    Chords_Bass_Notes_Write(0xff);
-    Chords_Notes_Write(0xff);
-    Bass_Notes_Write(0xff);
-    Chorus_Speed_Write(0xff);
-    Control_Reg_10_Write(0xff);
-    Control_Reg_11_Write(0xff);
+//    Chords_Bass_Notes_Write(0xff);
+//    Chords_Notes_Write(0xff);
+ //   Bass_Notes_Write(0xff);
+//    Chorus_Speed_Write(0xff);
+ //   Control_Reg_10_Write(0xff);
+ //   Control_Reg_11_Write(0xff);
     
-    Keys_Notes_5_Write(0x40);
+  //  Keys_Notes_5_Write(0x40);
     
     
     //Keys_Notes_5_Write(0x40);
@@ -546,11 +546,11 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
                 case 3:
                     if (midiMsg[USB_EVENT_BYTE2] < 63)
                     {
-                    Tabs_4_Write(Tabs_4_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-32)));
+                    Tabs_4_Write(Tabs_4_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-24)));
                     }
                     else
                     {
-                    Tabs_4_Write(Tabs_4_Read() | (0x01 << (midiMsg[USB_EVENT_BYTE1]-32)));    
+                    Tabs_4_Write(Tabs_4_Read() | (0x01 << (midiMsg[USB_EVENT_BYTE1]-24)));    
                     }
                     break;
              
