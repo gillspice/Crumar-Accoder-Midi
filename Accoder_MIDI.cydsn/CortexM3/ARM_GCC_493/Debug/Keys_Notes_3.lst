@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
   29:Generated_Source\PSoC5/Keys_Notes_3.c **** *
   30:Generated_Source\PSoC5/Keys_Notes_3.c **** * Parameters:
   31:Generated_Source\PSoC5/Keys_Notes_3.c **** *  control:  The value to be assigned to the Control Register.
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 2
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 2
 
 
   32:Generated_Source\PSoC5/Keys_Notes_3.c **** *
@@ -101,7 +101,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
   55              	.L3:
   56 001a 00BF     		.align	2
   57              	.L2:
-  58 001c 7D640040 		.word	1073767549
+  58 001c 73640040 		.word	1073767539
   59              		.cfi_endproc
   60              	.LFE0:
   61              		.size	Keys_Notes_3_Write, .-Keys_Notes_3_Write
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
   43:Generated_Source\PSoC5/Keys_Notes_3.c **** /*******************************************************************************
   44:Generated_Source\PSoC5/Keys_Notes_3.c **** * Function Name: Keys_Notes_3_Read
   45:Generated_Source\PSoC5/Keys_Notes_3.c **** ********************************************************************************
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 3
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 3
 
 
   46:Generated_Source\PSoC5/Keys_Notes_3.c **** *
@@ -162,7 +162,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
   93              	.L7:
   94              		.align	2
   95              	.L6:
-  96 0014 7D640040 		.word	1073767549
+  96 0014 73640040 		.word	1073767539
   97              		.cfi_endproc
   98              	.LFE1:
   99              		.size	Keys_Notes_3_Read, .-Keys_Notes_3_Read
@@ -178,46 +178,46 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  109 000b 01       		.uleb128 0x1
  110 000c 00000000 		.4byte	.LASF14
  111 0010 01       		.byte	0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 4
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 4
 
 
- 112 0011 76010000 		.4byte	.LASF15
- 113 0015 8E000000 		.4byte	.LASF16
+ 112 0011 82010000 		.4byte	.LASF15
+ 113 0015 00010000 		.4byte	.LASF16
  114 0019 00000000 		.4byte	.Ldebug_ranges0+0
  115 001d 00000000 		.4byte	0
  116 0021 00000000 		.4byte	.Ldebug_line0
  117 0025 02       		.uleb128 0x2
  118 0026 01       		.byte	0x1
  119 0027 06       		.byte	0x6
- 120 0028 B5010000 		.4byte	.LASF0
+ 120 0028 C1010000 		.4byte	.LASF0
  121 002c 02       		.uleb128 0x2
  122 002d 01       		.byte	0x1
  123 002e 08       		.byte	0x8
- 124 002f D3000000 		.4byte	.LASF1
+ 124 002f 94000000 		.4byte	.LASF1
  125 0033 02       		.uleb128 0x2
  126 0034 02       		.byte	0x2
  127 0035 05       		.byte	0x5
- 128 0036 9C010000 		.4byte	.LASF2
+ 128 0036 A8010000 		.4byte	.LASF2
  129 003a 02       		.uleb128 0x2
  130 003b 02       		.byte	0x2
  131 003c 07       		.byte	0x7
- 132 003d F8000000 		.4byte	.LASF3
+ 132 003d B9000000 		.4byte	.LASF3
  133 0041 02       		.uleb128 0x2
  134 0042 04       		.byte	0x4
  135 0043 05       		.byte	0x5
- 136 0044 AC010000 		.4byte	.LASF4
+ 136 0044 B8010000 		.4byte	.LASF4
  137 0048 02       		.uleb128 0x2
  138 0049 04       		.byte	0x4
  139 004a 07       		.byte	0x7
- 140 004b E6000000 		.4byte	.LASF5
+ 140 004b A7000000 		.4byte	.LASF5
  141 004f 02       		.uleb128 0x2
  142 0050 08       		.byte	0x8
  143 0051 05       		.byte	0x5
- 144 0052 63010000 		.4byte	.LASF6
+ 144 0052 6F010000 		.4byte	.LASF6
  145 0056 02       		.uleb128 0x2
  146 0057 08       		.byte	0x8
  147 0058 07       		.byte	0x7
- 148 0059 4C010000 		.4byte	.LASF7
+ 148 0059 58010000 		.4byte	.LASF7
  149 005d 03       		.uleb128 0x3
  150 005e 04       		.byte	0x4
  151 005f 05       		.byte	0x5
@@ -225,36 +225,36 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  153 0064 02       		.uleb128 0x2
  154 0065 04       		.byte	0x4
  155 0066 07       		.byte	0x7
- 156 0067 3F010000 		.4byte	.LASF8
+ 156 0067 4B010000 		.4byte	.LASF8
  157 006b 04       		.uleb128 0x4
- 158 006c A6010000 		.4byte	.LASF12
+ 158 006c B2010000 		.4byte	.LASF12
  159 0070 02       		.byte	0x2
  160 0071 9201     		.2byte	0x192
  161 0073 2C000000 		.4byte	0x2c
  162 0077 02       		.uleb128 0x2
  163 0078 04       		.byte	0x4
  164 0079 04       		.byte	0x4
- 165 007a CD000000 		.4byte	.LASF9
+ 165 007a 8E000000 		.4byte	.LASF9
  166 007e 02       		.uleb128 0x2
  167 007f 08       		.byte	0x8
  168 0080 04       		.byte	0x4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 5
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 5
 
 
- 169 0081 26010000 		.4byte	.LASF10
+ 169 0081 E7000000 		.4byte	.LASF10
  170 0085 02       		.uleb128 0x2
  171 0086 01       		.byte	0x1
  172 0087 08       		.byte	0x8
- 173 0088 71010000 		.4byte	.LASF11
+ 173 0088 7D010000 		.4byte	.LASF11
  174 008c 04       		.uleb128 0x4
- 175 008d E1000000 		.4byte	.LASF13
+ 175 008d A2000000 		.4byte	.LASF13
  176 0091 02       		.byte	0x2
  177 0092 3C02     		.2byte	0x23c
  178 0094 98000000 		.4byte	0x98
  179 0098 05       		.uleb128 0x5
  180 0099 6B000000 		.4byte	0x6b
  181 009d 06       		.uleb128 0x6
- 182 009e 13010000 		.4byte	.LASF17
+ 182 009e D4000000 		.4byte	.LASF17
  183 00a2 01       		.byte	0x1
  184 00a3 25       		.byte	0x25
  185 00a4 00000000 		.4byte	.LFB0
@@ -263,7 +263,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  188 00ad 9C       		.byte	0x9c
  189 00ae C1000000 		.4byte	0xc1
  190 00b2 07       		.uleb128 0x7
- 191 00b3 0B010000 		.4byte	.LASF18
+ 191 00b3 CC000000 		.4byte	.LASF18
  192 00b7 01       		.byte	0x1
  193 00b8 25       		.byte	0x25
  194 00b9 6B000000 		.4byte	0x6b
@@ -272,7 +272,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  197 00bf 77       		.sleb128 -9
  198 00c0 00       		.byte	0
  199 00c1 08       		.uleb128 0x8
- 200 00c2 2D010000 		.4byte	.LASF19
+ 200 00c2 EE000000 		.4byte	.LASF19
  201 00c6 01       		.byte	0x1
  202 00c7 39       		.byte	0x39
  203 00c8 6B000000 		.4byte	0x6b
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  223 000c 17       		.uleb128 0x17
  224 000d 11       		.uleb128 0x11
  225 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 6
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 6
 
 
  226 000f 10       		.uleb128 0x10
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  280 0045 0B       		.uleb128 0xb
  281 0046 3B       		.uleb128 0x3b
  282 0047 0B       		.uleb128 0xb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 7
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 7
 
 
  283 0048 27       		.uleb128 0x27
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  337 0080 00       		.byte	0
  338              		.section	.debug_aranges,"",%progbits
  339 0000 24000000 		.4byte	0x24
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 8
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 8
 
 
  340 0004 0200     		.2byte	0x2
@@ -464,102 +464,102 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 1
  366      74696F6E 
  366      2D736563 
  366      74696F6E 
- 367              	.LASF16:
- 368 008e 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\GitHub\\Accoder\\A"
- 368      73657273 
- 368      5C323134 
- 368      30313635 
- 368      38365C44 
- 369 00bb 63636F64 		.ascii	"ccoder_MIDI.cydsn\000"
- 369      65725F4D 
- 369      4944492E 
- 369      63796473 
- 369      6E00
- 370              	.LASF9:
- 371 00cd 666C6F61 		.ascii	"float\000"
- 371      7400
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 9
+ 367              	.LASF9:
+ 368 008e 666C6F61 		.ascii	"float\000"
+ 368      7400
+ 369              	.LASF1:
+ 370 0094 756E7369 		.ascii	"unsigned char\000"
+ 370      676E6564 
+ 370      20636861 
+ 370      7200
+ 371              	.LASF13:
+ 372 00a2 72656738 		.ascii	"reg8\000"
+ 372      00
+ 373              	.LASF5:
+ 374 00a7 6C6F6E67 		.ascii	"long unsigned int\000"
+ 374      20756E73 
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 9
 
 
- 372              	.LASF1:
- 373 00d3 756E7369 		.ascii	"unsigned char\000"
- 373      676E6564 
- 373      20636861 
- 373      7200
- 374              	.LASF13:
- 375 00e1 72656738 		.ascii	"reg8\000"
- 375      00
- 376              	.LASF5:
- 377 00e6 6C6F6E67 		.ascii	"long unsigned int\000"
- 377      20756E73 
- 377      69676E65 
- 377      6420696E 
- 377      7400
- 378              	.LASF3:
- 379 00f8 73686F72 		.ascii	"short unsigned int\000"
- 379      7420756E 
- 379      7369676E 
- 379      65642069 
- 379      6E7400
- 380              	.LASF18:
- 381 010b 636F6E74 		.ascii	"control\000"
- 381      726F6C00 
- 382              	.LASF17:
- 383 0113 4B657973 		.ascii	"Keys_Notes_3_Write\000"
- 383      5F4E6F74 
- 383      65735F33 
- 383      5F577269 
- 383      746500
- 384              	.LASF10:
- 385 0126 646F7562 		.ascii	"double\000"
- 385      6C6500
- 386              	.LASF19:
- 387 012d 4B657973 		.ascii	"Keys_Notes_3_Read\000"
- 387      5F4E6F74 
- 387      65735F33 
- 387      5F526561 
- 387      6400
+ 374      69676E65 
+ 374      6420696E 
+ 374      7400
+ 375              	.LASF3:
+ 376 00b9 73686F72 		.ascii	"short unsigned int\000"
+ 376      7420756E 
+ 376      7369676E 
+ 376      65642069 
+ 376      6E7400
+ 377              	.LASF18:
+ 378 00cc 636F6E74 		.ascii	"control\000"
+ 378      726F6C00 
+ 379              	.LASF17:
+ 380 00d4 4B657973 		.ascii	"Keys_Notes_3_Write\000"
+ 380      5F4E6F74 
+ 380      65735F33 
+ 380      5F577269 
+ 380      746500
+ 381              	.LASF10:
+ 382 00e7 646F7562 		.ascii	"double\000"
+ 382      6C6500
+ 383              	.LASF19:
+ 384 00ee 4B657973 		.ascii	"Keys_Notes_3_Read\000"
+ 384      5F4E6F74 
+ 384      65735F33 
+ 384      5F526561 
+ 384      6400
+ 385              	.LASF16:
+ 386 0100 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\GitHub\\Crumar-Acc"
+ 386      73657273 
+ 386      5C323134 
+ 386      30313635 
+ 386      38365C44 
+ 387 012e 6F646572 		.ascii	"oder-Midi\\Accoder_MIDI.cydsn\000"
+ 387      2D4D6964 
+ 387      695C4163 
+ 387      636F6465 
+ 387      725F4D49 
  388              	.LASF8:
- 389 013f 756E7369 		.ascii	"unsigned int\000"
+ 389 014b 756E7369 		.ascii	"unsigned int\000"
  389      676E6564 
  389      20696E74 
  389      00
  390              	.LASF7:
- 391 014c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 391 0158 6C6F6E67 		.ascii	"long long unsigned int\000"
  391      206C6F6E 
  391      6720756E 
  391      7369676E 
  391      65642069 
  392              	.LASF6:
- 393 0163 6C6F6E67 		.ascii	"long long int\000"
+ 393 016f 6C6F6E67 		.ascii	"long long int\000"
  393      206C6F6E 
  393      6720696E 
  393      7400
  394              	.LASF11:
- 395 0171 63686172 		.ascii	"char\000"
+ 395 017d 63686172 		.ascii	"char\000"
  395      00
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccWKV4DV.s 			page 10
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmJFYuk.s 			page 10
 
 
  396              	.LASF15:
- 397 0176 47656E65 		.ascii	"Generated_Source\\PSoC5\\Keys_Notes_3.c\000"
+ 397 0182 47656E65 		.ascii	"Generated_Source\\PSoC5\\Keys_Notes_3.c\000"
  397      72617465 
  397      645F536F 
  397      75726365 
  397      5C50536F 
  398              	.LASF2:
- 399 019c 73686F72 		.ascii	"short int\000"
+ 399 01a8 73686F72 		.ascii	"short int\000"
  399      7420696E 
  399      7400
  400              	.LASF12:
- 401 01a6 75696E74 		.ascii	"uint8\000"
+ 401 01b2 75696E74 		.ascii	"uint8\000"
  401      3800
  402              	.LASF4:
- 403 01ac 6C6F6E67 		.ascii	"long int\000"
+ 403 01b8 6C6F6E67 		.ascii	"long int\000"
  403      20696E74 
  403      00
  404              	.LASF0:
- 405 01b5 7369676E 		.ascii	"signed char\000"
+ 405 01c1 7369676E 		.ascii	"signed char\000"
  405      65642063 
  405      68617200 
  406              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
   55 0006 00       		.space	1
   56              		.global	MIDI1_UART_rxBufferOverflow
   57              		.type	MIDI1_UART_rxBufferOverflow, %object
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 2
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 2
 
 
   58              		.size	MIDI1_UART_rxBufferOverflow, 1
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
   43:Generated_Source\PSoC5/MIDI1_UART.c ****         volatile uint8 MIDI1_UART_rxAddressMode = MIDI1_UART_RX_ADDRESS_MODE;
   44:Generated_Source\PSoC5/MIDI1_UART.c ****         volatile uint8 MIDI1_UART_rxAddressDetected = 0u;
   45:Generated_Source\PSoC5/MIDI1_UART.c ****     #endif /* (MIDI1_UART_RXHW_ADDRESS_ENABLED) */
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 3
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 3
 
 
   46:Generated_Source\PSoC5/MIDI1_UART.c **** #endif /* (MIDI1_UART_RX_INTERRUPT_ENABLED && (MIDI1_UART_RX_ENABLED || MIDI1_UART_HD_ENABLED)) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
   87              		.loc 1 82 0
   88 0010 024B     		ldr	r3, .L3
   89 0012 0122     		movs	r2, #1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 4
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 4
 
 
   90 0014 1A70     		strb	r2, [r3]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  119 0002 00AF     		add	r7, sp, #0
  120              		.cfi_def_cfa_register 7
  108:Generated_Source\PSoC5/MIDI1_UART.c ****     #if(MIDI1_UART_RX_ENABLED || MIDI1_UART_HD_ENABLED)
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 5
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 5
 
 
  109:Generated_Source\PSoC5/MIDI1_UART.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  135:Generated_Source\PSoC5/MIDI1_UART.c **** 
  136:Generated_Source\PSoC5/MIDI1_UART.c ****         /* Write Counter Value for TX Bit Clk Generator*/
  137:Generated_Source\PSoC5/MIDI1_UART.c ****         #if (MIDI1_UART_TXCLKGEN_DP)
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 6
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 6
 
 
  138:Generated_Source\PSoC5/MIDI1_UART.c ****             MIDI1_UART_TXBITCLKGEN_CTR_REG = MIDI1_UART_BIT_CENTER;
@@ -343,12 +343,12 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  165              	.L6:
  166 004c 00000000 		.word	MIDI1_UART_RXISR
  167 0050 00000000 		.word	MIDI1_UART_errorStatus
- 168 0054 8E640040 		.word	1073767566
- 169 0058 84640040 		.word	1073767556
+ 168 0054 89640040 		.word	1073767561
+ 169 0058 88640040 		.word	1073767560
  170 005c 00000000 		.word	MIDI1_UART_TXISR
- 171 0060 24640040 		.word	1073767460
- 172 0064 34640040 		.word	1073767476
- 173 0068 87640040 		.word	1073767559
+ 171 0060 27640040 		.word	1073767463
+ 172 0064 37640040 		.word	1073767479
+ 173 0068 82640040 		.word	1073767554
  174              		.cfi_endproc
  175              	.LFE1:
  176              		.size	MIDI1_UART_Init, .-MIDI1_UART_Init
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  180              		.thumb
  181              		.thumb_func
  182              		.type	MIDI1_UART_Enable, %function
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 7
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 7
 
 
  183              	MIDI1_UART_Enable:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  207 001a DBB2     		uxtb	r3, r3
  208 001c 1370     		strb	r3, [r2]
  191:Generated_Source\PSoC5/MIDI1_UART.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 8
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 8
 
 
  192:Generated_Source\PSoC5/MIDI1_UART.c ****         /* Enable the RX Interrupt */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  218:Generated_Source\PSoC5/MIDI1_UART.c ****     #if (MIDI1_UART_INTERNAL_CLOCK_USED)
  219:Generated_Source\PSoC5/MIDI1_UART.c ****         MIDI1_UART_IntClock_Start();  /* Enable the clock */
  220:Generated_Source\PSoC5/MIDI1_UART.c ****     #endif /* (MIDI1_UART_INTERNAL_CLOCK_USED) */
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 9
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 9
 
 
  221:Generated_Source\PSoC5/MIDI1_UART.c **** 
@@ -498,10 +498,10 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  248              	.L10:
  249 005e 00BF     		.align	2
  250              	.L9:
- 251 0060 9E640040 		.word	1073767582
- 252 0064 94640040 		.word	1073767572
+ 251 0060 99640040 		.word	1073767577
+ 252 0064 98640040 		.word	1073767576
  253 0068 00E100E0 		.word	-536813312
- 254 006c 97640040 		.word	1073767575
+ 254 006c 92640040 		.word	1073767570
  255 0070 80E200E0 		.word	-536812928
  256              		.cfi_endproc
  257              	.LFE2:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  270              		@ frame_needed = 1, uses_anonymous_args = 0
  271 0000 80B5     		push	{r7, lr}
  272              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 10
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 10
 
 
  273              		.cfi_offset 7, -8
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  266:Generated_Source\PSoC5/MIDI1_UART.c ****         #endif /* (MIDI1_UART_RX_INTERRUPT_ENABLED) */
  267:Generated_Source\PSoC5/MIDI1_UART.c ****     #endif /* (MIDI1_UART_RX_ENABLED || MIDI1_UART_HD_ENABLED) */
  268:Generated_Source\PSoC5/MIDI1_UART.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 11
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 11
 
 
  269:Generated_Source\PSoC5/MIDI1_UART.c ****     #if (MIDI1_UART_TX_ENABLED)
@@ -637,10 +637,10 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  326              	.L13:
  327              		.align	2
  328              	.L12:
- 329 0058 9E640040 		.word	1073767582
- 330 005c 94640040 		.word	1073767572
+ 329 0058 99640040 		.word	1073767577
+ 330 005c 98640040 		.word	1073767576
  331 0060 80E100E0 		.word	-536813184
- 332 0064 97640040 		.word	1073767575
+ 332 0064 92640040 		.word	1073767570
  333              		.cfi_endproc
  334              	.LFE3:
  335              		.size	MIDI1_UART_Stop, .-MIDI1_UART_Stop
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  282:Generated_Source\PSoC5/MIDI1_UART.c **** * Function Name: MIDI1_UART_ReadControlRegister
  283:Generated_Source\PSoC5/MIDI1_UART.c **** ********************************************************************************
  284:Generated_Source\PSoC5/MIDI1_UART.c **** *
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 12
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 12
 
 
  285:Generated_Source\PSoC5/MIDI1_UART.c **** * Summary:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  307:Generated_Source\PSoC5/MIDI1_UART.c **** ********************************************************************************
  308:Generated_Source\PSoC5/MIDI1_UART.c **** *
  309:Generated_Source\PSoC5/MIDI1_UART.c **** * Summary:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 13
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 13
 
 
  310:Generated_Source\PSoC5/MIDI1_UART.c **** *  Writes an 8-bit value into the control register
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  410              	.LFB6:
  330:Generated_Source\PSoC5/MIDI1_UART.c **** 
  331:Generated_Source\PSoC5/MIDI1_UART.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 14
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 14
 
 
  332:Generated_Source\PSoC5/MIDI1_UART.c **** #if(MIDI1_UART_RX_ENABLED || MIDI1_UART_HD_ENABLED)
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  434              		@ sp needed
  435 0014 5DF8047B 		ldr	r7, [sp], #4
  436              		.cfi_restore 7
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 15
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 15
 
 
  437              		.cfi_def_cfa_offset 0
@@ -846,7 +846,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  439              	.L19:
  440 001a 00BF     		.align	2
  441              	.L18:
- 442 001c 84640040 		.word	1073767556
+ 442 001c 88640040 		.word	1073767560
  443              		.cfi_endproc
  444              	.LFE6:
  445              		.size	MIDI1_UART_SetRxInterruptMode, .-MIDI1_UART_SetRxInterruptMode
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  460              		.cfi_def_cfa_offset 4
  461              		.cfi_offset 7, -4
  462 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 16
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 16
 
 
  463              		.cfi_def_cfa_offset 16
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  412:Generated_Source\PSoC5/MIDI1_UART.c ****             if(locRxBufferRead >= MIDI1_UART_RX_BUFFER_SIZE)
  499              		.loc 1 412 0
  500 0038 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 17
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 17
 
 
  501 003a FF2B     		cmp	r3, #255
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  526              		.loc 1 440 0
  527 005c 0B4B     		ldr	r3, .L27+20
  528 005e 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 18
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 18
 
 
  529 0060 FB71     		strb	r3, [r7, #7]
@@ -1061,7 +1061,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  553 0080 00000000 		.word	MIDI1_UART_rxBufferWrite
  554 0084 00000000 		.word	MIDI1_UART_rxBufferLoopDetect
  555 0088 00000000 		.word	MIDI1_UART_rxBuffer
- 556 008c 49640040 		.word	1073767497
+ 556 008c 49650040 		.word	1073767753
  557 0090 00E100E0 		.word	-536813312
  558              		.cfi_endproc
  559              	.LFE7:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  455:Generated_Source\PSoC5/MIDI1_UART.c **** 
  456:Generated_Source\PSoC5/MIDI1_UART.c ****     /*******************************************************************************
  457:Generated_Source\PSoC5/MIDI1_UART.c ****     * Function Name: MIDI1_UART_ReadRxStatus
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 19
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 19
 
 
  458:Generated_Source\PSoC5/MIDI1_UART.c ****     ********************************************************************************
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  588 0012 0A4B     		ldr	r3, .L32+4
  589 0014 1B78     		ldrb	r3, [r3]
  590 0016 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 20
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 20
 
 
  591 0018 002B     		cmp	r3, #0
@@ -1176,7 +1176,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  615              	.L33:
  616              		.align	2
  617              	.L32:
- 618 0038 64640040 		.word	1073767524
+ 618 0038 68640040 		.word	1073767528
  619 003c 00000000 		.word	MIDI1_UART_rxBufferOverflow
  620              		.cfi_endproc
  621              	.LFE8:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  507:Generated_Source\PSoC5/MIDI1_UART.c ****     * Summary:
  508:Generated_Source\PSoC5/MIDI1_UART.c ****     *  Returns the last received byte of data. MIDI1_UART_GetChar() is
  509:Generated_Source\PSoC5/MIDI1_UART.c ****     *  designed for ASCII characters and returns a uint8 where 1 to 255 are values
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 21
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 21
 
 
  510:Generated_Source\PSoC5/MIDI1_UART.c ****     *  for valid characters and 0 indicates an error occurred or no data is present.
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  650              		.loc 1 544 0
  651 0010 224B     		ldr	r3, .L41+4
  652 0012 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 22
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 22
 
 
  653 0014 BB71     		strb	r3, [r7, #6]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  693 004e 1B78     		ldrb	r3, [r3]
  694 0050 DBB2     		uxtb	r3, r3
  695 0052 002B     		cmp	r3, #0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 23
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 23
 
 
  696 0054 03D0     		beq	.L38
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  584:Generated_Source\PSoC5/MIDI1_UART.c ****                                 MIDI1_UART_RX_STS_STOP_ERROR | MIDI1_UART_RX_STS_OVERRUN)) != 0u)
  722              		.loc 1 584 0
  723 007c 002B     		cmp	r3, #0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 24
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 24
 
 
  724 007e 01D0     		beq	.L39
@@ -1438,11 +1438,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  751 00a0 00000000 		.word	MIDI1_UART_rxBufferWrite
  752 00a4 00000000 		.word	MIDI1_UART_rxBufferLoopDetect
  753 00a8 00000000 		.word	MIDI1_UART_rxBuffer
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 25
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 25
 
 
- 754 00ac 64640040 		.word	1073767524
- 755 00b0 49640040 		.word	1073767497
+ 754 00ac 68640040 		.word	1073767528
+ 755 00b0 49650040 		.word	1073767753
  756 00b4 00E100E0 		.word	-536813312
  757              		.cfi_endproc
  758              	.LFE9:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  640:Generated_Source\PSoC5/MIDI1_UART.c ****         MIDI1_UART_DisableRxInt();
  781              		.loc 1 640 0
  782 0006 0C4B     		ldr	r3, .L45
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 26
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 26
 
 
  783 0008 0222     		movs	r2, #2
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  828              		.type	MIDI1_UART_GetRxBufferSize, %function
  829              	MIDI1_UART_GetRxBufferSize:
  830              	.LFB11:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 27
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 27
 
 
  650:Generated_Source\PSoC5/MIDI1_UART.c **** 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  843              		.loc 1 691 0
  844 0006 1D4B     		ldr	r3, .L54
  845 0008 0222     		movs	r2, #2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 28
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 28
 
 
  846 000a 1A60     		str	r2, [r3]
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  885 0048 0D4B     		ldr	r3, .L54+4
  886 004a 1B78     		ldrb	r3, [r3]
  887 004c DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 29
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 29
 
 
  888 004e D31A     		subs	r3, r2, r3
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  925 0080 00000000 		.word	MIDI1_UART_rxBufferRead
  926 0084 00000000 		.word	MIDI1_UART_rxBufferWrite
  927 0088 00000000 		.word	MIDI1_UART_rxBufferLoopDetect
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 30
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 30
 
 
  928 008c 00E100E0 		.word	-536813312
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  947              		.cfi_offset 14, -4
  948 0002 82B0     		sub	sp, sp, #8
  949              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 31
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 31
 
 
  950 0004 00AF     		add	r7, sp, #0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  988              		.loc 1 774 0
  989 0048 094B     		ldr	r3, .L57+16
  990 004a 0022     		movs	r2, #0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 32
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 32
 
 
  991 004c 1A70     		strb	r2, [r3]
@@ -1887,7 +1887,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1007              	.L58:
  1008              		.align	2
  1009              	.L57:
- 1010 0060 99640040 		.word	1073767577
+ 1010 0060 99650040 		.word	1073767833
  1011 0064 80E100E0 		.word	-536813184
  1012 0068 00000000 		.word	MIDI1_UART_rxBufferRead
  1013 006c 00000000 		.word	MIDI1_UART_rxBufferWrite
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  792:Generated_Source\PSoC5/MIDI1_UART.c ****     * Parameters:
  793:Generated_Source\PSoC5/MIDI1_UART.c ****     *  addressMode: Enumerated value indicating the mode of RX addressing
  794:Generated_Source\PSoC5/MIDI1_UART.c ****     *  MIDI1_UART__B_UART__AM_SW_BYTE_BYTE -  Software Byte-by-Byte address
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 33
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 33
 
 
  795:Generated_Source\PSoC5/MIDI1_UART.c ****     *                                               detection
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  835:Generated_Source\PSoC5/MIDI1_UART.c ****             if(0u != addressMode)
  836:Generated_Source\PSoC5/MIDI1_UART.c ****             {
  837:Generated_Source\PSoC5/MIDI1_UART.c ****                 /* Suppress compiler warning */
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 34
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 34
 
 
  838:Generated_Source\PSoC5/MIDI1_UART.c ****             }
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1075 0006 0346     		mov	r3, r0
  1076 0008 FB71     		strb	r3, [r7, #7]
  859:Generated_Source\PSoC5/MIDI1_UART.c ****         MIDI1_UART_RXADDRESS1_REG = address;
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 35
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 35
 
 
  1077              		.loc 1 859 0
@@ -2059,7 +2059,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1091              	.L62:
  1092 001a 00BF     		.align	2
  1093              	.L61:
- 1094 001c 29640040 		.word	1073767465
+ 1094 001c 29650040 		.word	1073767721
  1095              		.cfi_endproc
  1096              	.LFE14:
  1097              		.size	MIDI1_UART_SetRxAddress1, .-MIDI1_UART_SetRxAddress1
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1112              		.cfi_def_cfa_offset 4
  1113              		.cfi_offset 7, -4
  1114 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 36
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 36
 
 
  1115              		.cfi_def_cfa_offset 16
@@ -2125,7 +2125,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1134              	.L65:
  1135 001a 00BF     		.align	2
  1136              	.L64:
- 1137 001c 39640040 		.word	1073767481
+ 1137 001c 39650040 		.word	1073767737
  1138              		.cfi_endproc
  1139              	.LFE15:
  1140              		.size	MIDI1_UART_SetRxAddress2, .-MIDI1_UART_SetRxAddress2
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  899:Generated_Source\PSoC5/MIDI1_UART.c ****     *   MIDI1_UART_TX_STS_FIFO_NOT_FULL   Interrupt when TX FIFO is not full
  900:Generated_Source\PSoC5/MIDI1_UART.c ****     *
  901:Generated_Source\PSoC5/MIDI1_UART.c ****     * Return:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 37
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 37
 
 
  902:Generated_Source\PSoC5/MIDI1_UART.c ****     *  None.
@@ -2202,7 +2202,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1177              	.L68:
  1178 001a 00BF     		.align	2
  1179              	.L67:
- 1180 001c 87640040 		.word	1073767559
+ 1180 001c 82640040 		.word	1073767554
  1181              		.cfi_endproc
  1182              	.LFE16:
  1183              		.size	MIDI1_UART_SetTxInterruptMode, .-MIDI1_UART_SetTxInterruptMode
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  913:Generated_Source\PSoC5/MIDI1_UART.c **** 
  914:Generated_Source\PSoC5/MIDI1_UART.c ****     /*******************************************************************************
  915:Generated_Source\PSoC5/MIDI1_UART.c ****     * Function Name: MIDI1_UART_WriteTxData
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 38
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 38
 
 
  916:Generated_Source\PSoC5/MIDI1_UART.c ****     ********************************************************************************
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1211              		.loc 1 950 0
  1212 0012 194B     		ldr	r3, .L74+4
  1213 0014 0422     		movs	r2, #4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 39
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 39
 
 
  1214 0016 1A60     		str	r2, [r3]
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1252 0052 FB79     		ldrb	r3, [r7, #7]
  1253 0054 5354     		strb	r3, [r2, r1]
  966:Generated_Source\PSoC5/MIDI1_UART.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 40
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 40
 
 
  967:Generated_Source\PSoC5/MIDI1_UART.c ****                 /* Add to the software buffer. */
@@ -2385,8 +2385,8 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1281 0078 80E100E0 		.word	-536813184
  1282 007c 00000000 		.word	MIDI1_UART_txBufferRead
  1283 0080 00000000 		.word	MIDI1_UART_txBufferWrite
- 1284 0084 67640040 		.word	1073767527
- 1285 0088 47640040 		.word	1073767495
+ 1284 0084 62640040 		.word	1073767522
+ 1285 0088 46640040 		.word	1073767494
  1286 008c 00000000 		.word	MIDI1_UART_txBuffer
  1287 0090 00E100E0 		.word	-536813312
  1288              		.cfi_endproc
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1294              		.thumb
  1295              		.thumb_func
  1296              		.type	MIDI1_UART_ReadTxStatus, %function
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 41
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 41
 
 
  1297              	MIDI1_UART_ReadTxStatus:
@@ -2455,10 +2455,10 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1322              	.L79:
  1323              		.align	2
  1324              	.L78:
- 1325 0014 67640040 		.word	1073767527
+ 1325 0014 62640040 		.word	1073767522
  1326              		.cfi_endproc
  1327              	.LFE18:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 42
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 42
 
 
  1328              		.size	MIDI1_UART_ReadTxStatus, .-MIDI1_UART_ReadTxStatus
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1346              		.cfi_def_cfa_offset 24
  1347 0004 00AF     		add	r7, sp, #0
  1348              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 43
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 43
 
 
  1349 0006 0346     		mov	r3, r0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1377 0030 FA7B     		ldrb	r2, [r7, #15]	@ zero_extendqisi2
  1378 0032 BB7B     		ldrb	r3, [r7, #14]	@ zero_extendqisi2
  1379 0034 D31A     		subs	r3, r2, r3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 44
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 44
 
 
 1067:Generated_Source\PSoC5/MIDI1_UART.c ****                                 ((locTxBufferWrite - locTxBufferRead) ==
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1084:Generated_Source\PSoC5/MIDI1_UART.c ****             MIDI1_UART_txBuffer[locTxBufferWrite] = txDataByte;
  1417              		.loc 1 1084 0
  1418 006c FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 45
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 45
 
 
  1419 006e 1049     		ldr	r1, .L87+16
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1116:Generated_Source\PSoC5/MIDI1_UART.c ****     }
  1442              		.loc 1 1116 0
  1443 0094 1437     		adds	r7, r7, #20
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 46
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 46
 
 
  1444              		.cfi_def_cfa_offset 4
@@ -2714,8 +2714,8 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1454              	.L87:
  1455 00a0 00000000 		.word	MIDI1_UART_txBufferWrite
  1456 00a4 00000000 		.word	MIDI1_UART_txBufferRead
- 1457 00a8 67640040 		.word	1073767527
- 1458 00ac 47640040 		.word	1073767495
+ 1457 00a8 62640040 		.word	1073767522
+ 1458 00ac 46640040 		.word	1073767494
  1459 00b0 00000000 		.word	MIDI1_UART_txBuffer
  1460 00b4 00E200E0 		.word	-536813056
  1461              		.cfi_endproc
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1143:Generated_Source\PSoC5/MIDI1_UART.c ****     *
 1144:Generated_Source\PSoC5/MIDI1_UART.c ****     *******************************************************************************/
 1145:Generated_Source\PSoC5/MIDI1_UART.c ****     void MIDI1_UART_PutString(const char8 string[]) 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 47
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 47
 
 
 1146:Generated_Source\PSoC5/MIDI1_UART.c ****     {
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1514 0034 EFD1     		bne	.L92
  1515              	.L89:
 1157:Generated_Source\PSoC5/MIDI1_UART.c ****             }
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 48
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 48
 
 
 1158:Generated_Source\PSoC5/MIDI1_UART.c ****         }
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1190:Generated_Source\PSoC5/MIDI1_UART.c ****     *******************************************************************************/
 1191:Generated_Source\PSoC5/MIDI1_UART.c ****     void MIDI1_UART_PutArray(const uint8 string[], uint8 byteCount)
 1192:Generated_Source\PSoC5/MIDI1_UART.c ****                                                                     
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 49
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 49
 
 
 1193:Generated_Source\PSoC5/MIDI1_UART.c ****     {
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1581              	.L95:
 1203:Generated_Source\PSoC5/MIDI1_UART.c ****             }
 1204:Generated_Source\PSoC5/MIDI1_UART.c ****         }
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 50
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 50
 
 
 1205:Generated_Source\PSoC5/MIDI1_UART.c ****     }
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1609              		.cfi_def_cfa_offset 8
  1610              		.cfi_offset 7, -8
  1611              		.cfi_offset 14, -4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 51
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 51
 
 
  1612 0002 82B0     		sub	sp, sp, #8
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1242:Generated_Source\PSoC5/MIDI1_UART.c ****     /*******************************************************************************
 1243:Generated_Source\PSoC5/MIDI1_UART.c ****     * Function Name: MIDI1_UART_GetTxBufferSize
 1244:Generated_Source\PSoC5/MIDI1_UART.c ****     ********************************************************************************
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 52
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 52
 
 
 1245:Generated_Source\PSoC5/MIDI1_UART.c ****     *
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1283:Generated_Source\PSoC5/MIDI1_UART.c ****         if(MIDI1_UART_txBufferRead == MIDI1_UART_txBufferWrite)
  1672              		.loc 1 1283 0
  1673 000c 164B     		ldr	r3, .L110+4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 53
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 53
 
 
  1674 000e 1B78     		ldrb	r3, [r3]
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1714              		.loc 1 1297 0
  1715 0050 074B     		ldr	r3, .L110+12
  1716 0052 0422     		movs	r2, #4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 54
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 54
 
 
  1717 0054 1A60     		str	r2, [r3]
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1747              	MIDI1_UART_ClearTxBuffer:
  1748              	.LFB24:
 1322:Generated_Source\PSoC5/MIDI1_UART.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 55
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 55
 
 
 1323:Generated_Source\PSoC5/MIDI1_UART.c **** 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1765              		.loc 1 1360 0
  1766 000e 114A     		ldr	r2, .L113
  1767 0010 104B     		ldr	r3, .L113
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 56
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 56
 
 
  1768 0012 1B78     		ldrb	r3, [r3]
@@ -3358,12 +3358,12 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1806              		@ sp needed
  1807 0052 80BD     		pop	{r7, pc}
  1808              	.L114:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 57
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 57
 
 
  1809              		.align	2
  1810              	.L113:
- 1811 0054 97640040 		.word	1073767575
+ 1811 0054 96640040 		.word	1073767574
  1812 0058 80E100E0 		.word	-536813184
  1813 005c 00000000 		.word	MIDI1_UART_txBufferRead
  1814 0060 00000000 		.word	MIDI1_UART_txBufferWrite
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1413:Generated_Source\PSoC5/MIDI1_UART.c ****     *  There are 3 variants for this API usage:
 1414:Generated_Source\PSoC5/MIDI1_UART.c ****     *  1) SendBreak(3) - function will send the Break signal and take care on the
 1415:Generated_Source\PSoC5/MIDI1_UART.c ****     *     configuration returning. Function will block CPU until transmission
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 58
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 58
 
 
 1416:Generated_Source\PSoC5/MIDI1_UART.c ****     *     complete.
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1450:Generated_Source\PSoC5/MIDI1_UART.c ****         #if(MIDI1_UART_HD_ENABLED) /* Half Duplex mode*/
 1451:Generated_Source\PSoC5/MIDI1_UART.c **** 
 1452:Generated_Source\PSoC5/MIDI1_UART.c ****             if( (retMode == MIDI1_UART_SEND_BREAK) ||
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 59
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 59
 
 
 1453:Generated_Source\PSoC5/MIDI1_UART.c ****                 (retMode == MIDI1_UART_SEND_WAIT_REINIT ) )
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1498:Generated_Source\PSoC5/MIDI1_UART.c ****                 #endif /* End MIDI1_UART_PARITY_TYPE != MIDI1_UART__B_UART__NONE_REVB  */
 1499:Generated_Source\PSoC5/MIDI1_UART.c **** 
 1500:Generated_Source\PSoC5/MIDI1_UART.c ****                 #if(MIDI1_UART_TXCLKGEN_DP)
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 60
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 60
 
 
 1501:Generated_Source\PSoC5/MIDI1_UART.c ****                     txPeriod = MIDI1_UART_TXBITCLKTX_COMPLETE_REG;
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1521:Generated_Source\PSoC5/MIDI1_UART.c ****                 do /* Wait until transmit complete */
 1522:Generated_Source\PSoC5/MIDI1_UART.c ****                 {
 1523:Generated_Source\PSoC5/MIDI1_UART.c ****                     tmpStat = MIDI1_UART_TXSTATUS_REG;
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 61
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 61
 
 
  1890              		.loc 1 1523 0 is_stmt 1 discriminator 1
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
 1546:Generated_Source\PSoC5/MIDI1_UART.c ****         }
 1547:Generated_Source\PSoC5/MIDI1_UART.c ****     }
  1922              		.loc 1 1547 0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 62
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 62
 
 
  1923 007e 1437     		adds	r7, r7, #20
@@ -3674,10 +3674,10 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1933              		.align	2
  1934              	.L123:
  1935 0088 00000000 		.word	MIDI1_UART_initVar
- 1936 008c 34640040 		.word	1073767476
+ 1936 008c 37640040 		.word	1073767479
  1937 0090 08000000 		.word	txPeriod.4994
- 1938 0094 47640040 		.word	1073767495
- 1939 0098 67640040 		.word	1073767527
+ 1938 0094 46640040 		.word	1073767494
+ 1939 0098 62640040 		.word	1073767522
  1940              		.cfi_endproc
  1941              	.LFE25:
  1942              		.size	MIDI1_UART_SendBreak, .-MIDI1_UART_SendBreak
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1951              		.loc 1 1573 0
  1952              		.cfi_startproc
  1953              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 63
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 63
 
 
  1954              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -3774,11 +3774,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  1988 0006 00000000 		.4byte	.Ldebug_abbrev0
  1989 000a 04       		.byte	0x4
  1990 000b 01       		.uleb128 0x1
- 1991 000c 46030000 		.4byte	.LASF77
+ 1991 000c 07030000 		.4byte	.LASF77
  1992 0010 01       		.byte	0x1
  1993 0011 88000000 		.4byte	.LASF78
- 1994 0015 C7020000 		.4byte	.LASF79
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 64
+ 1994 0015 09050000 		.4byte	.LASF79
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 64
 
 
  1995 0019 00000000 		.4byte	.Ldebug_ranges0+0
@@ -3791,11 +3791,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2002 002c 02       		.uleb128 0x2
  2003 002d 01       		.byte	0x1
  2004 002e 08       		.byte	0x8
- 2005 002f 51040000 		.4byte	.LASF1
+ 2005 002f 12040000 		.4byte	.LASF1
  2006 0033 02       		.uleb128 0x2
  2007 0034 02       		.byte	0x2
  2008 0035 05       		.byte	0x5
- 2009 0036 A8040000 		.4byte	.LASF2
+ 2009 0036 69040000 		.4byte	.LASF2
  2010 003a 02       		.uleb128 0x2
  2011 003b 02       		.byte	0x2
  2012 003c 07       		.byte	0x7
@@ -3838,29 +3838,29 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2049 0084 4D010000 		.4byte	.LASF11
  2050 0088 02       		.byte	0x2
  2051 0089 9401     		.2byte	0x194
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 65
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 65
 
 
  2052 008b 48000000 		.4byte	0x48
  2053 008f 02       		.uleb128 0x2
  2054 0090 04       		.byte	0x4
  2055 0091 04       		.byte	0x4
- 2056 0092 F1030000 		.4byte	.LASF12
+ 2056 0092 B2030000 		.4byte	.LASF12
  2057 0096 02       		.uleb128 0x2
  2058 0097 08       		.byte	0x8
  2059 0098 04       		.byte	0x4
  2060 0099 3A010000 		.4byte	.LASF13
  2061 009d 04       		.uleb128 0x4
- 2062 009e 48050000 		.4byte	.LASF14
+ 2062 009e 89050000 		.4byte	.LASF14
  2063 00a2 02       		.byte	0x2
  2064 00a3 A301     		.2byte	0x1a3
  2065 00a5 A9000000 		.4byte	0xa9
  2066 00a9 02       		.uleb128 0x2
  2067 00aa 01       		.byte	0x1
  2068 00ab 08       		.byte	0x8
- 2069 00ac 2B050000 		.4byte	.LASF15
+ 2069 00ac EC040000 		.4byte	.LASF15
  2070 00b0 04       		.uleb128 0x4
- 2071 00b1 3C040000 		.4byte	.LASF16
+ 2071 00b1 FD030000 		.4byte	.LASF16
  2072 00b5 02       		.byte	0x2
  2073 00b6 3C02     		.2byte	0x23c
  2074 00b8 BC000000 		.4byte	0xbc
@@ -3876,7 +3876,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2084 00d2 02       		.uleb128 0x2
  2085 00d3 04       		.byte	0x4
  2086 00d4 07       		.byte	0x7
- 2087 00d5 06030000 		.4byte	.LASF18
+ 2087 00d5 C7020000 		.4byte	.LASF18
  2088 00d9 06       		.uleb128 0x6
  2089 00da 3E020000 		.4byte	.LASF19
  2090 00de 01       		.byte	0x1
@@ -3894,11 +3894,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2102 00f9 01       		.uleb128 0x1
  2103 00fa 9C       		.byte	0x9c
  2104 00fb 07       		.uleb128 0x7
- 2105 00fc E7050000 		.4byte	.LASF21
+ 2105 00fc F3050000 		.4byte	.LASF21
  2106 0100 01       		.byte	0x1
  2107 0101 B7       		.byte	0xb7
  2108 0102 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 66
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 66
 
 
  2109 0106 74000000 		.4byte	.LFE2-.LFB2
@@ -3906,7 +3906,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2111 010b 9C       		.byte	0x9c
  2112 010c 1F010000 		.4byte	0x11f
  2113 0110 08       		.uleb128 0x8
- 2114 0111 93050000 		.4byte	.LASF23
+ 2114 0111 9F050000 		.4byte	.LASF23
  2115 0115 01       		.byte	0x1
  2116 0116 B9       		.byte	0xb9
  2117 0117 6B000000 		.4byte	0x6b
@@ -3915,7 +3915,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2120 011d 77       		.sleb128 -9
  2121 011e 00       		.byte	0
  2122 011f 07       		.uleb128 0x7
- 2123 0120 41040000 		.4byte	.LASF22
+ 2123 0120 02040000 		.4byte	.LASF22
  2124 0124 01       		.byte	0x1
  2125 0125 F0       		.byte	0xf0
  2126 0126 00000000 		.4byte	.LFB3
@@ -3924,7 +3924,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2129 012f 9C       		.byte	0x9c
  2130 0130 43010000 		.4byte	0x143
  2131 0134 08       		.uleb128 0x8
- 2132 0135 93050000 		.4byte	.LASF23
+ 2132 0135 9F050000 		.4byte	.LASF23
  2133 0139 01       		.byte	0x1
  2134 013a F2       		.byte	0xf2
  2135 013b 6B000000 		.4byte	0x6b
@@ -3933,7 +3933,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2138 0141 77       		.sleb128 -9
  2139 0142 00       		.byte	0
  2140 0143 09       		.uleb128 0x9
- 2141 0144 DA040000 		.4byte	.LASF49
+ 2141 0144 9B040000 		.4byte	.LASF49
  2142 0148 01       		.byte	0x1
  2143 0149 2701     		.2byte	0x127
  2144 014b 6B000000 		.4byte	0x6b
@@ -3942,7 +3942,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2147 0157 01       		.uleb128 0x1
  2148 0158 9C       		.byte	0x9c
  2149 0159 0A       		.uleb128 0xa
- 2150 015a 73040000 		.4byte	.LASF24
+ 2150 015a 34040000 		.4byte	.LASF24
  2151 015e 01       		.byte	0x1
  2152 015f 3F01     		.2byte	0x13f
  2153 0161 00000000 		.4byte	.LFB5
@@ -3958,12 +3958,12 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2163 017b 02       		.uleb128 0x2
  2164 017c 91       		.byte	0x91
  2165 017d 77       		.sleb128 -9
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 67
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 67
 
 
  2166 017e 00       		.byte	0
  2167 017f 0A       		.uleb128 0xa
- 2168 0180 B2040000 		.4byte	.LASF25
+ 2168 0180 73040000 		.4byte	.LASF25
  2169 0184 01       		.byte	0x1
  2170 0185 6701     		.2byte	0x167
  2171 0187 00000000 		.4byte	.LFB6
@@ -3991,7 +3991,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2193 01ba 9C       		.byte	0x9c
  2194 01bb ED010000 		.4byte	0x1ed
  2195 01bf 0D       		.uleb128 0xd
- 2196 01c0 F9040000 		.4byte	.LASF28
+ 2196 01c0 BA040000 		.4byte	.LASF28
  2197 01c4 01       		.byte	0x1
  2198 01c5 8A01     		.2byte	0x18a
  2199 01c7 6B000000 		.4byte	0x6b
@@ -3999,7 +3999,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2201 01cc 91       		.byte	0x91
  2202 01cd 77       		.sleb128 -9
  2203 01ce 0D       		.uleb128 0xd
- 2204 01cf 83050000 		.4byte	.LASF29
+ 2204 01cf 8F050000 		.4byte	.LASF29
  2205 01d3 01       		.byte	0x1
  2206 01d4 8E01     		.2byte	0x18e
  2207 01d6 6B000000 		.4byte	0x6b
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2220 01ed 0C       		.uleb128 0xc
  2221 01ee 54010000 		.4byte	.LASF32
  2222 01f2 01       		.byte	0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 68
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 68
 
 
  2223 01f3 E501     		.2byte	0x1e5
@@ -4029,7 +4029,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2228 0202 9C       		.byte	0x9c
  2229 0203 17020000 		.4byte	0x217
  2230 0207 0D       		.uleb128 0xd
- 2231 0208 A4050000 		.4byte	.LASF33
+ 2231 0208 B0050000 		.4byte	.LASF33
  2232 020c 01       		.byte	0x1
  2233 020d E701     		.2byte	0x1e7
  2234 020f 6B000000 		.4byte	0x6b
@@ -4038,7 +4038,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2237 0215 77       		.sleb128 -9
  2238 0216 00       		.byte	0
  2239 0217 0C       		.uleb128 0xc
- 2240 0218 33030000 		.4byte	.LASF34
+ 2240 0218 F4020000 		.4byte	.LASF34
  2241 021c 01       		.byte	0x1
  2242 021d 1402     		.2byte	0x214
  2243 021f 6B000000 		.4byte	0x6b
@@ -4048,7 +4048,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2247 022c 9C       		.byte	0x9c
  2248 022d 6E020000 		.4byte	0x26e
  2249 0231 0D       		.uleb128 0xd
- 2250 0232 F9040000 		.4byte	.LASF28
+ 2250 0232 BA040000 		.4byte	.LASF28
  2251 0236 01       		.byte	0x1
  2252 0237 1602     		.2byte	0x216
  2253 0239 6B000000 		.4byte	0x6b
@@ -4056,7 +4056,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2255 023e 91       		.byte	0x91
  2256 023f 77       		.sleb128 -9
  2257 0240 0D       		.uleb128 0xd
- 2258 0241 D4030000 		.4byte	.LASF35
+ 2258 0241 95030000 		.4byte	.LASF35
  2259 0245 01       		.byte	0x1
  2260 0246 1702     		.2byte	0x217
  2261 0248 6B000000 		.4byte	0x6b
@@ -4064,7 +4064,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2263 024d 91       		.byte	0x91
  2264 024e 74       		.sleb128 -12
  2265 024f 0D       		.uleb128 0xd
- 2266 0250 83050000 		.4byte	.LASF29
+ 2266 0250 8F050000 		.4byte	.LASF29
  2267 0254 01       		.byte	0x1
  2268 0255 1A02     		.2byte	0x21a
  2269 0257 6B000000 		.4byte	0x6b
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2277 0266 6B000000 		.4byte	0x6b
  2278 026a 02       		.uleb128 0x2
  2279 026b 91       		.byte	0x91
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 69
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 69
 
 
  2280 026c 75       		.sleb128 -11
@@ -4131,14 +4131,14 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2327 02d3 9C       		.byte	0x9c
  2328 02d4 E8020000 		.4byte	0x2e8
  2329 02d8 0D       		.uleb128 0xd
- 2330 02d9 93050000 		.4byte	.LASF23
+ 2330 02d9 9F050000 		.4byte	.LASF23
  2331 02dd 01       		.byte	0x1
  2332 02de F702     		.2byte	0x2f7
  2333 02e0 6B000000 		.4byte	0x6b
  2334 02e4 02       		.uleb128 0x2
  2335 02e5 91       		.byte	0x91
  2336 02e6 77       		.sleb128 -9
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 70
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 70
 
 
  2337 02e7 00       		.byte	0
@@ -4161,7 +4161,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2354 030c 77       		.sleb128 -9
  2355 030d 00       		.byte	0
  2356 030e 0A       		.uleb128 0xa
- 2357 030f F7030000 		.4byte	.LASF43
+ 2357 030f B8030000 		.4byte	.LASF43
  2358 0313 01       		.byte	0x1
  2359 0314 5903     		.2byte	0x359
  2360 0316 00000000 		.4byte	.LFB14
@@ -4170,7 +4170,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2363 031f 9C       		.byte	0x9c
  2364 0320 34030000 		.4byte	0x334
  2365 0324 0B       		.uleb128 0xb
- 2366 0325 2B030000 		.4byte	.LASF44
+ 2366 0325 EC020000 		.4byte	.LASF44
  2367 0329 01       		.byte	0x1
  2368 032a 5903     		.2byte	0x359
  2369 032c 6B000000 		.4byte	0x6b
@@ -4179,7 +4179,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2372 0332 77       		.sleb128 -9
  2373 0333 00       		.byte	0
  2374 0334 0A       		.uleb128 0xa
- 2375 0335 10040000 		.4byte	.LASF45
+ 2375 0335 D1030000 		.4byte	.LASF45
  2376 0339 01       		.byte	0x1
  2377 033a 6D03     		.2byte	0x36d
  2378 033c 00000000 		.4byte	.LFB15
@@ -4188,7 +4188,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2381 0345 9C       		.byte	0x9c
  2382 0346 5A030000 		.4byte	0x35a
  2383 034a 0B       		.uleb128 0xb
- 2384 034b 2B030000 		.4byte	.LASF44
+ 2384 034b EC020000 		.4byte	.LASF44
  2385 034f 01       		.byte	0x1
  2386 0350 6D03     		.2byte	0x36d
  2387 0352 6B000000 		.4byte	0x6b
@@ -4197,8 +4197,8 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2390 0358 77       		.sleb128 -9
  2391 0359 00       		.byte	0
  2392 035a 0A       		.uleb128 0xa
- 2393 035b C9050000 		.4byte	.LASF46
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 71
+ 2393 035b D5050000 		.4byte	.LASF46
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 71
 
 
  2394 035f 01       		.byte	0x1
@@ -4236,7 +4236,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2426 03a4 77       		.sleb128 -9
  2427 03a5 00       		.byte	0
  2428 03a6 09       		.uleb128 0x9
- 2429 03a7 00050000 		.4byte	.LASF50
+ 2429 03a7 C1040000 		.4byte	.LASF50
  2430 03ab 01       		.byte	0x1
  2431 03ac EB03     		.2byte	0x3eb
  2432 03ae 6B000000 		.4byte	0x6b
@@ -4245,7 +4245,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2435 03ba 01       		.uleb128 0x1
  2436 03bb 9C       		.byte	0x9c
  2437 03bc 0A       		.uleb128 0xa
- 2438 03bd 29040000 		.4byte	.LASF51
+ 2438 03bd EA030000 		.4byte	.LASF51
  2439 03c1 01       		.byte	0x1
  2440 03c2 1104     		.2byte	0x411
  2441 03c4 00000000 		.4byte	.LFB19
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2448 03d7 01       		.byte	0x1
  2449 03d8 1104     		.2byte	0x411
  2450 03da 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 72
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 72
 
 
  2451 03de 02       		.uleb128 0x2
@@ -4282,7 +4282,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2469 03fe 76       		.sleb128 -10
  2470 03ff 00       		.byte	0
  2471 0400 0F       		.uleb128 0xf
- 2472 0401 93040000 		.4byte	.LASF54
+ 2472 0401 54040000 		.4byte	.LASF54
  2473 0405 01       		.byte	0x1
  2474 0406 7904     		.2byte	0x479
  2475 0408 00000000 		.4byte	.LFB20
@@ -4313,12 +4313,12 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2500 043b 11       		.uleb128 0x11
  2501 043c 9D000000 		.4byte	0x9d
  2502 0440 0F       		.uleb128 0xf
- 2503 0441 5F040000 		.4byte	.LASF57
+ 2503 0441 20040000 		.4byte	.LASF57
  2504 0445 01       		.byte	0x1
  2505 0446 A704     		.2byte	0x4a7
  2506 0448 00000000 		.4byte	.LFB21
  2507 044c 40000000 		.4byte	.LFE21-.LFB21
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 73
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 73
 
 
  2508 0450 01       		.uleb128 0x1
@@ -4333,7 +4333,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2517 0463 91       		.byte	0x91
  2518 0464 6C       		.sleb128 -20
  2519 0465 0B       		.uleb128 0xb
- 2520 0466 D0040000 		.4byte	.LASF58
+ 2520 0466 91040000 		.4byte	.LASF58
  2521 046a 01       		.byte	0x1
  2522 046b A704     		.2byte	0x4a7
  2523 046d 6B000000 		.4byte	0x6b
@@ -4355,7 +4355,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2539 048a 11       		.uleb128 0x11
  2540 048b 6B000000 		.4byte	0x6b
  2541 048f 0F       		.uleb128 0xf
- 2542 0490 18050000 		.4byte	.LASF59
+ 2542 0490 D9040000 		.4byte	.LASF59
  2543 0494 01       		.byte	0x1
  2544 0495 CE04     		.2byte	0x4ce
  2545 0497 00000000 		.4byte	.LFB22
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2562 04bb F904     		.2byte	0x4f9
  2563 04bd 6B000000 		.4byte	0x6b
  2564 04c1 00000000 		.4byte	.LFB23
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 74
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 74
 
 
  2565 04c5 74000000 		.4byte	.LFE23-.LFB23
@@ -4404,7 +4404,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2585 04f0 9C       		.byte	0x9c
  2586 04f1 05050000 		.4byte	0x505
  2587 04f5 0D       		.uleb128 0xd
- 2588 04f6 93050000 		.4byte	.LASF23
+ 2588 04f6 9F050000 		.4byte	.LASF23
  2589 04fa 01       		.byte	0x1
  2590 04fb 4C05     		.2byte	0x54c
  2591 04fd 6B000000 		.4byte	0x6b
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2619 0539 A805     		.2byte	0x5a8
  2620 053b 6B000000 		.4byte	0x6b
  2621 053f 02       		.uleb128 0x2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 75
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 75
 
 
  2622 0540 91       		.byte	0x91
@@ -4454,7 +4454,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2632 0554 00       		.byte	0
  2633 0555 00       		.byte	0
  2634 0556 0A       		.uleb128 0xa
- 2635 0557 4E050000 		.4byte	.LASF66
+ 2635 0557 54050000 		.4byte	.LASF66
  2636 055b 01       		.byte	0x1
  2637 055c 2406     		.2byte	0x624
  2638 055e 00000000 		.4byte	.LFB26
@@ -4487,7 +4487,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2665 059b FE       		.byte	0xfe
  2666 059c 00       		.byte	0
  2667 059d 13       		.uleb128 0x13
- 2668 059e DD030000 		.4byte	.LASF68
+ 2668 059e 9E030000 		.4byte	.LASF68
  2669 05a2 01       		.byte	0x1
  2670 05a3 1E       		.byte	0x1e
  2671 05a4 AE050000 		.4byte	0x5ae
@@ -4497,8 +4497,8 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2675 05ae 05       		.uleb128 0x5
  2676 05af 8D050000 		.4byte	0x58d
  2677 05b3 13       		.uleb128 0x13
- 2678 05b4 30050000 		.4byte	.LASF69
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 76
+ 2678 05b4 F1040000 		.4byte	.LASF69
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 76
 
 
  2679 05b8 01       		.byte	0x1
@@ -4508,7 +4508,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2683 05bf 03       		.byte	0x3
  2684 05c0 00000000 		.4byte	MIDI1_UART_txBufferRead
  2685 05c4 13       		.uleb128 0x13
- 2686 05c5 6A050000 		.4byte	.LASF70
+ 2686 05c5 70050000 		.4byte	.LASF70
  2687 05c9 01       		.byte	0x1
  2688 05ca 20       		.byte	0x20
  2689 05cb 6B000000 		.4byte	0x6b
@@ -4550,7 +4550,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2725 0619 03       		.byte	0x3
  2726 061a 00000000 		.4byte	MIDI1_UART_rxBufferWrite
  2727 061e 13       		.uleb128 0x13
- 2728 061f AB050000 		.4byte	.LASF75
+ 2728 061f B7050000 		.4byte	.LASF75
  2729 0623 01       		.byte	0x1
  2730 0624 28       		.byte	0x28
  2731 0625 BC000000 		.4byte	0xbc
@@ -4558,10 +4558,10 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2733 062a 03       		.byte	0x3
  2734 062b 00000000 		.4byte	MIDI1_UART_rxBufferLoopDetect
  2735 062f 13       		.uleb128 0x13
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 77
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 77
 
 
- 2736 0630 0F030000 		.4byte	.LASF76
+ 2736 0630 D0020000 		.4byte	.LASF76
  2737 0634 01       		.byte	0x1
  2738 0635 29       		.byte	0x29
  2739 0636 BC000000 		.4byte	0xbc
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2790 002c 03       		.uleb128 0x3
  2791 002d 0E       		.uleb128 0xe
  2792 002e 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 78
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 78
 
 
  2793 002f 0B       		.uleb128 0xb
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2847 0066 40       		.uleb128 0x40
  2848 0067 18       		.uleb128 0x18
  2849 0068 9642     		.uleb128 0x2116
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 79
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 79
 
 
  2850 006a 19       		.uleb128 0x19
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2904 00a1 3B       		.uleb128 0x3b
  2905 00a2 05       		.uleb128 0x5
  2906 00a3 27       		.uleb128 0x27
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 80
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 80
 
 
  2907 00a4 19       		.uleb128 0x19
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  2961 00dc 00       		.byte	0
  2962 00dd 0D       		.uleb128 0xd
  2963 00de 34       		.uleb128 0x34
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 81
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 81
 
 
  2964 00df 00       		.byte	0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3018 0116 01       		.uleb128 0x1
  3019 0117 12       		.uleb128 0x12
  3020 0118 06       		.uleb128 0x6
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 82
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 82
 
 
  3021 0119 40       		.uleb128 0x40
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3075 0150 13       		.uleb128 0x13
  3076 0151 01       		.uleb128 0x1
  3077 0152 13       		.uleb128 0x13
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 83
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 83
 
 
  3078 0153 00       		.byte	0
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3132 0098 00000000 		.4byte	.LFB17
  3133 009c 94000000 		.4byte	.LFE17-.LFB17
  3134 00a0 00000000 		.4byte	.LFB18
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 84
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 84
 
 
  3135 00a4 18000000 		.4byte	.LFE18-.LFB18
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3189 0084 20000000 		.4byte	.LFE16
  3190 0088 00000000 		.4byte	.LFB17
  3191 008c 94000000 		.4byte	.LFE17
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 85
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 85
 
 
  3192 0090 00000000 		.4byte	.LFB18
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3226      315F5541 
  3226      52545F49 
  3226      6E697400 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 86
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 86
 
 
  3227              	.LASF47:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3248      20696E74 
  3248      00
  3249              	.LASF9:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 87
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 87
 
 
  3250 0134 75696E74 		.ascii	"uint8\000"
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3274      315F5541 
  3274      52545F72 
  3274      78427566 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 88
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 88
 
 
  3274      66657257 
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3296      315F5541 
  3296      52545F47 
  3296      65745278 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 89
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 89
 
 
  3296      42756666 
@@ -5294,210 +5294,210 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 1
  3301              	.LASF64:
  3302 02bf 746D7053 		.ascii	"tmpStat\000"
  3302      74617400 
- 3303              	.LASF79:
- 3304 02c7 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\GitHub\\Accoder\\A"
- 3304      73657273 
- 3304      5C323134 
- 3304      30313635 
- 3304      38365C44 
- 3305 02f4 63636F64 		.ascii	"ccoder_MIDI.cydsn\000"
- 3305      65725F4D 
- 3305      4944492E 
- 3305      63796473 
- 3305      6E00
- 3306              	.LASF18:
- 3307 0306 73697A65 		.ascii	"sizetype\000"
- 3307      74797065 
- 3307      00
- 3308              	.LASF76:
- 3309 030f 4D494449 		.ascii	"MIDI1_UART_rxBufferOverflow\000"
- 3309      315F5541 
- 3309      52545F72 
- 3309      78427566 
- 3309      6665724F 
- 3310              	.LASF44:
- 3311 032b 61646472 		.ascii	"address\000"
- 3311      65737300 
- 3312              	.LASF34:
- 3313 0333 4D494449 		.ascii	"MIDI1_UART_GetChar\000"
- 3313      315F5541 
- 3313      52545F47 
- 3313      65744368 
- 3313      617200
- 3314              	.LASF77:
- 3315 0346 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 3315      4320342E 
- 3315      392E3320 
- 3315      32303135 
- 3315      30333033 
- 3316 0379 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 3316      20726576 
- 3316      6973696F 
- 3316      6E203232 
- 3316      31323230 
- 3317 03ac 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 3317      66756E63 
- 3317      74696F6E 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 90
+ 3303              	.LASF18:
+ 3304 02c7 73697A65 		.ascii	"sizetype\000"
+ 3304      74797065 
+ 3304      00
+ 3305              	.LASF76:
+ 3306 02d0 4D494449 		.ascii	"MIDI1_UART_rxBufferOverflow\000"
+ 3306      315F5541 
+ 3306      52545F72 
+ 3306      78427566 
+ 3306      6665724F 
+ 3307              	.LASF44:
+ 3308 02ec 61646472 		.ascii	"address\000"
+ 3308      65737300 
+ 3309              	.LASF34:
+ 3310 02f4 4D494449 		.ascii	"MIDI1_UART_GetChar\000"
+ 3310      315F5541 
+ 3310      52545F47 
+ 3310      65744368 
+ 3310      617200
+ 3311              	.LASF77:
+ 3312 0307 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 3312      4320342E 
+ 3312      392E3320 
+ 3312      32303135 
+ 3312      30333033 
+ 3313 033a 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 3313      20726576 
+ 3313      6973696F 
+ 3313      6E203232 
+ 3313      31323230 
+ 3314 036d 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 3314      66756E63 
+ 3314      74696F6E 
+ 3314      2D736563 
+ 3314      74696F6E 
+ 3315              	.LASF35:
+ 3316 0395 72785374 		.ascii	"rxStatus\000"
+ 3316      61747573 
+ 3316      00
+ 3317              	.LASF68:
+ 3318 039e 4D494449 		.ascii	"MIDI1_UART_txBuffer\000"
+ 3318      315F5541 
+ 3318      52545F74 
+ 3318      78427566 
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 90
 
 
- 3317      2D736563 
- 3317      74696F6E 
- 3318              	.LASF35:
- 3319 03d4 72785374 		.ascii	"rxStatus\000"
- 3319      61747573 
- 3319      00
- 3320              	.LASF68:
- 3321 03dd 4D494449 		.ascii	"MIDI1_UART_txBuffer\000"
- 3321      315F5541 
- 3321      52545F74 
- 3321      78427566 
- 3321      66657200 
- 3322              	.LASF12:
- 3323 03f1 666C6F61 		.ascii	"float\000"
- 3323      7400
- 3324              	.LASF43:
- 3325 03f7 4D494449 		.ascii	"MIDI1_UART_SetRxAddress1\000"
- 3325      315F5541 
- 3325      52545F53 
- 3325      65745278 
- 3325      41646472 
- 3326              	.LASF45:
- 3327 0410 4D494449 		.ascii	"MIDI1_UART_SetRxAddress2\000"
- 3327      315F5541 
- 3327      52545F53 
- 3327      65745278 
- 3327      41646472 
- 3328              	.LASF51:
- 3329 0429 4D494449 		.ascii	"MIDI1_UART_PutChar\000"
- 3329      315F5541 
- 3329      52545F50 
- 3329      75744368 
- 3329      617200
- 3330              	.LASF16:
- 3331 043c 72656738 		.ascii	"reg8\000"
- 3331      00
- 3332              	.LASF22:
- 3333 0441 4D494449 		.ascii	"MIDI1_UART_Stop\000"
- 3333      315F5541 
- 3333      52545F53 
- 3333      746F7000 
- 3334              	.LASF1:
- 3335 0451 756E7369 		.ascii	"unsigned char\000"
- 3335      676E6564 
- 3335      20636861 
- 3335      7200
- 3336              	.LASF57:
- 3337 045f 4D494449 		.ascii	"MIDI1_UART_PutArray\000"
- 3337      315F5541 
- 3337      52545F50 
- 3337      75744172 
- 3337      72617900 
- 3338              	.LASF24:
- 3339 0473 4D494449 		.ascii	"MIDI1_UART_WriteControlRegister\000"
- 3339      315F5541 
- 3339      52545F57 
- 3339      72697465 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 91
+ 3318      66657200 
+ 3319              	.LASF12:
+ 3320 03b2 666C6F61 		.ascii	"float\000"
+ 3320      7400
+ 3321              	.LASF43:
+ 3322 03b8 4D494449 		.ascii	"MIDI1_UART_SetRxAddress1\000"
+ 3322      315F5541 
+ 3322      52545F53 
+ 3322      65745278 
+ 3322      41646472 
+ 3323              	.LASF45:
+ 3324 03d1 4D494449 		.ascii	"MIDI1_UART_SetRxAddress2\000"
+ 3324      315F5541 
+ 3324      52545F53 
+ 3324      65745278 
+ 3324      41646472 
+ 3325              	.LASF51:
+ 3326 03ea 4D494449 		.ascii	"MIDI1_UART_PutChar\000"
+ 3326      315F5541 
+ 3326      52545F50 
+ 3326      75744368 
+ 3326      617200
+ 3327              	.LASF16:
+ 3328 03fd 72656738 		.ascii	"reg8\000"
+ 3328      00
+ 3329              	.LASF22:
+ 3330 0402 4D494449 		.ascii	"MIDI1_UART_Stop\000"
+ 3330      315F5541 
+ 3330      52545F53 
+ 3330      746F7000 
+ 3331              	.LASF1:
+ 3332 0412 756E7369 		.ascii	"unsigned char\000"
+ 3332      676E6564 
+ 3332      20636861 
+ 3332      7200
+ 3333              	.LASF57:
+ 3334 0420 4D494449 		.ascii	"MIDI1_UART_PutArray\000"
+ 3334      315F5541 
+ 3334      52545F50 
+ 3334      75744172 
+ 3334      72617900 
+ 3335              	.LASF24:
+ 3336 0434 4D494449 		.ascii	"MIDI1_UART_WriteControlRegister\000"
+ 3336      315F5541 
+ 3336      52545F57 
+ 3336      72697465 
+ 3336      436F6E74 
+ 3337              	.LASF54:
+ 3338 0454 4D494449 		.ascii	"MIDI1_UART_PutString\000"
+ 3338      315F5541 
+ 3338      52545F50 
+ 3338      75745374 
+ 3338      72696E67 
+ 3339              	.LASF2:
+ 3340 0469 73686F72 		.ascii	"short int\000"
+ 3340      7420696E 
+ 3340      7400
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 91
 
 
- 3339      436F6E74 
- 3340              	.LASF54:
- 3341 0493 4D494449 		.ascii	"MIDI1_UART_PutString\000"
- 3341      315F5541 
- 3341      52545F50 
- 3341      75745374 
- 3341      72696E67 
- 3342              	.LASF2:
- 3343 04a8 73686F72 		.ascii	"short int\000"
- 3343      7420696E 
- 3343      7400
- 3344              	.LASF25:
- 3345 04b2 4D494449 		.ascii	"MIDI1_UART_SetRxInterruptMode\000"
- 3345      315F5541 
- 3345      52545F53 
- 3345      65745278 
- 3345      496E7465 
- 3346              	.LASF58:
- 3347 04d0 62797465 		.ascii	"byteCount\000"
- 3347      436F756E 
- 3347      7400
- 3348              	.LASF49:
- 3349 04da 4D494449 		.ascii	"MIDI1_UART_ReadControlRegister\000"
- 3349      315F5541 
- 3349      52545F52 
- 3349      65616443 
- 3349      6F6E7472 
- 3350              	.LASF28:
- 3351 04f9 72784461 		.ascii	"rxData\000"
- 3351      746100
- 3352              	.LASF50:
- 3353 0500 4D494449 		.ascii	"MIDI1_UART_ReadTxStatus\000"
- 3353      315F5541 
- 3353      52545F52 
- 3353      65616454 
- 3353      78537461 
- 3354              	.LASF59:
- 3355 0518 4D494449 		.ascii	"MIDI1_UART_PutCRLF\000"
- 3355      315F5541 
- 3355      52545F50 
- 3355      75744352 
- 3355      4C4600
- 3356              	.LASF15:
- 3357 052b 63686172 		.ascii	"char\000"
- 3357      00
- 3358              	.LASF69:
- 3359 0530 4D494449 		.ascii	"MIDI1_UART_txBufferRead\000"
- 3359      315F5541 
- 3359      52545F74 
- 3359      78427566 
- 3359      66657252 
- 3360              	.LASF14:
- 3361 0548 63686172 		.ascii	"char8\000"
- 3361      3800
- 3362              	.LASF66:
- 3363 054e 4D494449 		.ascii	"MIDI1_UART_SetTxAddressMode\000"
+ 3341              	.LASF25:
+ 3342 0473 4D494449 		.ascii	"MIDI1_UART_SetRxInterruptMode\000"
+ 3342      315F5541 
+ 3342      52545F53 
+ 3342      65745278 
+ 3342      496E7465 
+ 3343              	.LASF58:
+ 3344 0491 62797465 		.ascii	"byteCount\000"
+ 3344      436F756E 
+ 3344      7400
+ 3345              	.LASF49:
+ 3346 049b 4D494449 		.ascii	"MIDI1_UART_ReadControlRegister\000"
+ 3346      315F5541 
+ 3346      52545F52 
+ 3346      65616443 
+ 3346      6F6E7472 
+ 3347              	.LASF28:
+ 3348 04ba 72784461 		.ascii	"rxData\000"
+ 3348      746100
+ 3349              	.LASF50:
+ 3350 04c1 4D494449 		.ascii	"MIDI1_UART_ReadTxStatus\000"
+ 3350      315F5541 
+ 3350      52545F52 
+ 3350      65616454 
+ 3350      78537461 
+ 3351              	.LASF59:
+ 3352 04d9 4D494449 		.ascii	"MIDI1_UART_PutCRLF\000"
+ 3352      315F5541 
+ 3352      52545F50 
+ 3352      75744352 
+ 3352      4C4600
+ 3353              	.LASF15:
+ 3354 04ec 63686172 		.ascii	"char\000"
+ 3354      00
+ 3355              	.LASF69:
+ 3356 04f1 4D494449 		.ascii	"MIDI1_UART_txBufferRead\000"
+ 3356      315F5541 
+ 3356      52545F74 
+ 3356      78427566 
+ 3356      66657252 
+ 3357              	.LASF79:
+ 3358 0509 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\GitHub\\Crumar-Acc"
+ 3358      73657273 
+ 3358      5C323134 
+ 3358      30313635 
+ 3358      38365C44 
+ 3359 0537 6F646572 		.ascii	"oder-Midi\\Accoder_MIDI.cydsn\000"
+ 3359      2D4D6964 
+ 3359      695C4163 
+ 3359      636F6465 
+ 3359      725F4D49 
+ 3360              	.LASF66:
+ 3361 0554 4D494449 		.ascii	"MIDI1_UART_SetTxAddressMode\000"
+ 3361      315F5541 
+ 3361      52545F53 
+ 3361      65745478 
+ 3361      41646472 
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccKox8LL.s 			page 92
+
+
+ 3362              	.LASF70:
+ 3363 0570 4D494449 		.ascii	"MIDI1_UART_txBufferWrite\000"
  3363      315F5541 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccs0xkfI.s 			page 92
-
-
- 3363      52545F53 
- 3363      65745478 
- 3363      41646472 
- 3364              	.LASF70:
- 3365 056a 4D494449 		.ascii	"MIDI1_UART_txBufferWrite\000"
- 3365      315F5541 
- 3365      52545F74 
- 3365      78427566 
- 3365      66657257 
+ 3363      52545F74 
+ 3363      78427566 
+ 3363      66657257 
+ 3364              	.LASF14:
+ 3365 0589 63686172 		.ascii	"char8\000"
+ 3365      3800
  3366              	.LASF29:
- 3367 0583 6C6F6352 		.ascii	"locRxBufferRead\000"
+ 3367 058f 6C6F6352 		.ascii	"locRxBufferRead\000"
  3367      78427566 
  3367      66657252 
  3367      65616400 
  3368              	.LASF23:
- 3369 0593 656E6162 		.ascii	"enableInterrupts\000"
+ 3369 059f 656E6162 		.ascii	"enableInterrupts\000"
  3369      6C65496E 
  3369      74657272 
  3369      75707473 
  3369      00
  3370              	.LASF33:
- 3371 05a4 73746174 		.ascii	"status\000"
+ 3371 05b0 73746174 		.ascii	"status\000"
  3371      757300
  3372              	.LASF75:
- 3373 05ab 4D494449 		.ascii	"MIDI1_UART_rxBufferLoopDetect\000"
+ 3373 05b7 4D494449 		.ascii	"MIDI1_UART_rxBufferLoopDetect\000"
  3373      315F5541 
  3373      52545F72 
  3373      78427566 
  3373      6665724C 
  3374              	.LASF46:
- 3375 05c9 4D494449 		.ascii	"MIDI1_UART_SetTxInterruptMode\000"
+ 3375 05d5 4D494449 		.ascii	"MIDI1_UART_SetTxInterruptMode\000"
  3375      315F5541 
  3375      52545F53 
  3375      65745478 
  3375      496E7465 
  3376              	.LASF21:
- 3377 05e7 4D494449 		.ascii	"MIDI1_UART_Enable\000"
+ 3377 05f3 4D494449 		.ascii	"MIDI1_UART_Enable\000"
  3377      315F5541 
  3377      52545F45 
  3377      6E61626C 

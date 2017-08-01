@@ -1,0 +1,903 @@
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Input_SW_ShiftReg_PM.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.bss
+  19              		.align	2
+  20              	Input_SW_ShiftReg_backup:
+  21 0000 00000000 		.space	12
+  21      00000000 
+  21      00000000 
+  22              		.section	.text.Input_SW_ShiftReg_SaveConfig,"ax",%progbits
+  23              		.align	2
+  24              		.global	Input_SW_ShiftReg_SaveConfig
+  25              		.thumb
+  26              		.thumb_func
+  27              		.type	Input_SW_ShiftReg_SaveConfig, %function
+  28              	Input_SW_ShiftReg_SaveConfig:
+  29              	.LFB0:
+  30              		.file 1 "Generated_Source\\PSoC5\\Input_SW_ShiftReg_PM.c"
+   1:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * File Name: Input_SW_ShiftReg_PM.c
+   3:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Version 2.30
+   4:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+   5:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Description:
+   6:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  This file provides the API source code for sleep mode support for Shift
+   7:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  Register component.
+   8:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+   9:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Note:
+  10:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  11:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** ********************************************************************************
+  12:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Copyright 2008-2013, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  14:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  15:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *******************************************************************************/
+  17:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  18:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** #include "Input_SW_ShiftReg.h"
+  19:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  20:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** static Input_SW_ShiftReg_BACKUP_STRUCT Input_SW_ShiftReg_backup =
+  21:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** {
+  22:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     Input_SW_ShiftReg_DISABLED,
+  23:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  24:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     ((uint32) Input_SW_ShiftReg_DEFAULT_A0),
+  25:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     ((uint32) Input_SW_ShiftReg_DEFAULT_A1),
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 2
+
+
+  26:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  27:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     #if(CY_UDB_V0)
+  28:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****         ((uint32) Input_SW_ShiftReg_INT_SRC),
+  29:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     #endif /* (CY_UDB_V0) */
+  30:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** };
+  31:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  32:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  33:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** /*******************************************************************************
+  34:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Function Name: Input_SW_ShiftReg_SaveConfig
+  35:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** ********************************************************************************
+  36:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  37:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Summary:
+  38:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  Saves Shift Register configuration.
+  39:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  40:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Parameters:
+  41:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+  42:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  43:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Return:
+  44:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+  45:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  46:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Reentrant:
+  47:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  No.
+  48:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  49:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *******************************************************************************/
+  50:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** void Input_SW_ShiftReg_SaveConfig(void) 
+  51:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** {
+  31              		.loc 1 51 0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 1, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36 0000 80B4     		push	{r7}
+  37              		.cfi_def_cfa_offset 4
+  38              		.cfi_offset 7, -4
+  39 0002 00AF     		add	r7, sp, #0
+  40              		.cfi_def_cfa_register 7
+  52:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     /* Store working registers A0 and A1 */
+  53:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     Input_SW_ShiftReg_backup.saveSrA0Reg   = CY_GET_REG32(Input_SW_ShiftReg_SHIFT_REG_LSB_PTR);
+  41              		.loc 1 53 0
+  42 0004 054B     		ldr	r3, .L2
+  43 0006 1B68     		ldr	r3, [r3]
+  44 0008 054A     		ldr	r2, .L2+4
+  45 000a 5360     		str	r3, [r2, #4]
+  54:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     Input_SW_ShiftReg_backup.saveSrA1Reg   = CY_GET_REG32(Input_SW_ShiftReg_SHIFT_REG_VALUE_LSB_PTR
+  46              		.loc 1 54 0
+  47 000c 054B     		ldr	r3, .L2+8
+  48 000e 1B68     		ldr	r3, [r3]
+  49 0010 034A     		ldr	r2, .L2+4
+  50 0012 9360     		str	r3, [r2, #8]
+  55:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  56:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     #if(CY_UDB_V0)
+  57:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****         Input_SW_ShiftReg_backup.saveSrIntMask = Input_SW_ShiftReg_SR_STATUS_MASK;
+  58:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     #endif /* (CY_UDB_V0) */
+  59:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** }
+  51              		.loc 1 59 0
+  52 0014 BD46     		mov	sp, r7
+  53              		.cfi_def_cfa_register 13
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 3
+
+
+  54              		@ sp needed
+  55 0016 5DF8047B 		ldr	r7, [sp], #4
+  56              		.cfi_restore 7
+  57              		.cfi_def_cfa_offset 0
+  58 001a 7047     		bx	lr
+  59              	.L3:
+  60              		.align	2
+  61              	.L2:
+  62 001c 0A640040 		.word	1073767434
+  63 0020 00000000 		.word	Input_SW_ShiftReg_backup
+  64 0024 1A640040 		.word	1073767450
+  65              		.cfi_endproc
+  66              	.LFE0:
+  67              		.size	Input_SW_ShiftReg_SaveConfig, .-Input_SW_ShiftReg_SaveConfig
+  68              		.section	.text.Input_SW_ShiftReg_RestoreConfig,"ax",%progbits
+  69              		.align	2
+  70              		.global	Input_SW_ShiftReg_RestoreConfig
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	Input_SW_ShiftReg_RestoreConfig, %function
+  74              	Input_SW_ShiftReg_RestoreConfig:
+  75              	.LFB1:
+  60:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  61:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  62:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** /*******************************************************************************
+  63:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Function Name: Input_SW_ShiftReg_RestoreConfig
+  64:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** ********************************************************************************
+  65:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  66:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Summary:
+  67:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  Restores Shift Register configuration.
+  68:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  69:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Parameters:
+  70:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+  71:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  72:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Return:
+  73:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+  74:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  75:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *******************************************************************************/
+  76:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** void Input_SW_ShiftReg_RestoreConfig(void) 
+  77:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** {
+  76              		.loc 1 77 0
+  77              		.cfi_startproc
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 1, uses_anonymous_args = 0
+  80              		@ link register save eliminated.
+  81 0000 80B4     		push	{r7}
+  82              		.cfi_def_cfa_offset 4
+  83              		.cfi_offset 7, -4
+  84 0002 00AF     		add	r7, sp, #0
+  85              		.cfi_def_cfa_register 7
+  78:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     /* Restore working registers A0 and A1 */
+  79:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     CY_SET_REG32(Input_SW_ShiftReg_SHIFT_REG_LSB_PTR, Input_SW_ShiftReg_backup.saveSrA0Reg);
+  86              		.loc 1 79 0
+  87 0004 054A     		ldr	r2, .L5
+  88 0006 064B     		ldr	r3, .L5+4
+  89 0008 5B68     		ldr	r3, [r3, #4]
+  90 000a 1360     		str	r3, [r2]
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 4
+
+
+  80:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     CY_SET_REG32(Input_SW_ShiftReg_SHIFT_REG_VALUE_LSB_PTR, Input_SW_ShiftReg_backup.saveSrA1Reg);
+  91              		.loc 1 80 0
+  92 000c 054A     		ldr	r2, .L5+8
+  93 000e 044B     		ldr	r3, .L5+4
+  94 0010 9B68     		ldr	r3, [r3, #8]
+  95 0012 1360     		str	r3, [r2]
+  81:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  82:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     #if(CY_UDB_V0)
+  83:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****         Input_SW_ShiftReg_SR_STATUS_MASK = ((uint8) Input_SW_ShiftReg_backup.saveSrIntMask);
+  84:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     #endif /* (CY_UDB_V0) */
+  85:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** }
+  96              		.loc 1 85 0
+  97 0014 BD46     		mov	sp, r7
+  98              		.cfi_def_cfa_register 13
+  99              		@ sp needed
+ 100 0016 5DF8047B 		ldr	r7, [sp], #4
+ 101              		.cfi_restore 7
+ 102              		.cfi_def_cfa_offset 0
+ 103 001a 7047     		bx	lr
+ 104              	.L6:
+ 105              		.align	2
+ 106              	.L5:
+ 107 001c 0A640040 		.word	1073767434
+ 108 0020 00000000 		.word	Input_SW_ShiftReg_backup
+ 109 0024 1A640040 		.word	1073767450
+ 110              		.cfi_endproc
+ 111              	.LFE1:
+ 112              		.size	Input_SW_ShiftReg_RestoreConfig, .-Input_SW_ShiftReg_RestoreConfig
+ 113              		.section	.text.Input_SW_ShiftReg_Sleep,"ax",%progbits
+ 114              		.align	2
+ 115              		.global	Input_SW_ShiftReg_Sleep
+ 116              		.thumb
+ 117              		.thumb_func
+ 118              		.type	Input_SW_ShiftReg_Sleep, %function
+ 119              	Input_SW_ShiftReg_Sleep:
+ 120              	.LFB2:
+  86:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  87:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+  88:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** /*******************************************************************************
+  89:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Function Name: Input_SW_ShiftReg_Sleep
+  90:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** ********************************************************************************
+  91:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  92:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Summary:
+  93:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  Prepare the component to enter a Sleep mode.
+  94:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  95:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Parameters:
+  96:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+  97:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+  98:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Return:
+  99:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+ 100:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+ 101:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Reentrant:
+ 102:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  No.
+ 103:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+ 104:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *******************************************************************************/
+ 105:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** void Input_SW_ShiftReg_Sleep(void) 
+ 106:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** {
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 5
+
+
+ 121              		.loc 1 106 0
+ 122              		.cfi_startproc
+ 123              		@ args = 0, pretend = 0, frame = 0
+ 124              		@ frame_needed = 1, uses_anonymous_args = 0
+ 125 0000 80B5     		push	{r7, lr}
+ 126              		.cfi_def_cfa_offset 8
+ 127              		.cfi_offset 7, -8
+ 128              		.cfi_offset 14, -4
+ 129 0002 00AF     		add	r7, sp, #0
+ 130              		.cfi_def_cfa_register 7
+ 107:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     Input_SW_ShiftReg_backup.enableState = ((uint8) Input_SW_ShiftReg_IS_ENABLED);
+ 131              		.loc 1 107 0
+ 132 0004 084B     		ldr	r3, .L8
+ 133 0006 1B78     		ldrb	r3, [r3]
+ 134 0008 DBB2     		uxtb	r3, r3
+ 135 000a 03F00103 		and	r3, r3, #1
+ 136 000e 002B     		cmp	r3, #0
+ 137 0010 14BF     		ite	ne
+ 138 0012 0123     		movne	r3, #1
+ 139 0014 0023     		moveq	r3, #0
+ 140 0016 DBB2     		uxtb	r3, r3
+ 141 0018 1A46     		mov	r2, r3
+ 142 001a 044B     		ldr	r3, .L8+4
+ 143 001c 1A70     		strb	r2, [r3]
+ 108:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+ 109:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     Input_SW_ShiftReg_Stop();
+ 144              		.loc 1 109 0
+ 145 001e FFF7FEFF 		bl	Input_SW_ShiftReg_Stop
+ 110:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     Input_SW_ShiftReg_SaveConfig();
+ 146              		.loc 1 110 0
+ 147 0022 FFF7FEFF 		bl	Input_SW_ShiftReg_SaveConfig
+ 111:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** }
+ 148              		.loc 1 111 0
+ 149 0026 80BD     		pop	{r7, pc}
+ 150              	.L9:
+ 151              		.align	2
+ 152              	.L8:
+ 153 0028 7E640040 		.word	1073767550
+ 154 002c 00000000 		.word	Input_SW_ShiftReg_backup
+ 155              		.cfi_endproc
+ 156              	.LFE2:
+ 157              		.size	Input_SW_ShiftReg_Sleep, .-Input_SW_ShiftReg_Sleep
+ 158              		.section	.text.Input_SW_ShiftReg_Wakeup,"ax",%progbits
+ 159              		.align	2
+ 160              		.global	Input_SW_ShiftReg_Wakeup
+ 161              		.thumb
+ 162              		.thumb_func
+ 163              		.type	Input_SW_ShiftReg_Wakeup, %function
+ 164              	Input_SW_ShiftReg_Wakeup:
+ 165              	.LFB3:
+ 112:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+ 113:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+ 114:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** /*******************************************************************************
+ 115:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Function Name: Input_SW_ShiftReg_Wakeup
+ 116:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** ********************************************************************************
+ 117:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+ 118:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Summary:
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 6
+
+
+ 119:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  Restores and enables the user configuration.
+ 120:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+ 121:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Parameters:
+ 122:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+ 123:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+ 124:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** * Return:
+ 125:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *  None.
+ 126:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *
+ 127:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** *******************************************************************************/
+ 128:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** void Input_SW_ShiftReg_Wakeup(void) 
+ 129:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** {
+ 166              		.loc 1 129 0
+ 167              		.cfi_startproc
+ 168              		@ args = 0, pretend = 0, frame = 0
+ 169              		@ frame_needed = 1, uses_anonymous_args = 0
+ 170 0000 80B5     		push	{r7, lr}
+ 171              		.cfi_def_cfa_offset 8
+ 172              		.cfi_offset 7, -8
+ 173              		.cfi_offset 14, -4
+ 174 0002 00AF     		add	r7, sp, #0
+ 175              		.cfi_def_cfa_register 7
+ 130:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     Input_SW_ShiftReg_RestoreConfig();
+ 176              		.loc 1 130 0
+ 177 0004 FFF7FEFF 		bl	Input_SW_ShiftReg_RestoreConfig
+ 131:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** 
+ 132:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     if(0u != Input_SW_ShiftReg_backup.enableState)
+ 178              		.loc 1 132 0
+ 179 0008 034B     		ldr	r3, .L12
+ 180 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 181 000c 002B     		cmp	r3, #0
+ 182 000e 01D0     		beq	.L10
+ 133:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     {
+ 134:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****         Input_SW_ShiftReg_Enable();
+ 183              		.loc 1 134 0
+ 184 0010 FFF7FEFF 		bl	Input_SW_ShiftReg_Enable
+ 185              	.L10:
+ 135:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c ****     }
+ 136:Generated_Source\PSoC5/Input_SW_ShiftReg_PM.c **** }
+ 186              		.loc 1 136 0
+ 187 0014 80BD     		pop	{r7, pc}
+ 188              	.L13:
+ 189 0016 00BF     		.align	2
+ 190              	.L12:
+ 191 0018 00000000 		.word	Input_SW_ShiftReg_backup
+ 192              		.cfi_endproc
+ 193              	.LFE3:
+ 194              		.size	Input_SW_ShiftReg_Wakeup, .-Input_SW_ShiftReg_Wakeup
+ 195              		.text
+ 196              	.Letext0:
+ 197              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 198              		.file 3 "Generated_Source\\PSoC5\\Input_SW_ShiftReg.h"
+ 199              		.section	.debug_info,"",%progbits
+ 200              	.Ldebug_info0:
+ 201 0000 4B010000 		.4byte	0x14b
+ 202 0004 0400     		.2byte	0x4
+ 203 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 204 000a 04       		.byte	0x4
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 7
+
+
+ 205 000b 01       		.uleb128 0x1
+ 206 000c EF000000 		.4byte	.LASF25
+ 207 0010 01       		.byte	0x1
+ 208 0011 3A000000 		.4byte	.LASF26
+ 209 0015 03020000 		.4byte	.LASF27
+ 210 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 211 001d 00000000 		.4byte	0
+ 212 0021 00000000 		.4byte	.Ldebug_line0
+ 213 0025 02       		.uleb128 0x2
+ 214 0026 01       		.byte	0x1
+ 215 0027 06       		.byte	0x6
+ 216 0028 F7010000 		.4byte	.LASF0
+ 217 002c 02       		.uleb128 0x2
+ 218 002d 01       		.byte	0x1
+ 219 002e 08       		.byte	0x8
+ 220 002f B0000000 		.4byte	.LASF1
+ 221 0033 02       		.uleb128 0x2
+ 222 0034 02       		.byte	0x2
+ 223 0035 05       		.byte	0x5
+ 224 0036 54020000 		.4byte	.LASF2
+ 225 003a 02       		.uleb128 0x2
+ 226 003b 02       		.byte	0x2
+ 227 003c 07       		.byte	0x7
+ 228 003d E4010000 		.4byte	.LASF3
+ 229 0041 02       		.uleb128 0x2
+ 230 0042 04       		.byte	0x4
+ 231 0043 05       		.byte	0x5
+ 232 0044 D5010000 		.4byte	.LASF4
+ 233 0048 02       		.uleb128 0x2
+ 234 0049 04       		.byte	0x4
+ 235 004a 07       		.byte	0x7
+ 236 004b 87000000 		.4byte	.LASF5
+ 237 004f 02       		.uleb128 0x2
+ 238 0050 08       		.byte	0x8
+ 239 0051 05       		.byte	0x5
+ 240 0052 00000000 		.4byte	.LASF6
+ 241 0056 02       		.uleb128 0x2
+ 242 0057 08       		.byte	0x8
+ 243 0058 07       		.byte	0x7
+ 244 0059 99000000 		.4byte	.LASF7
+ 245 005d 03       		.uleb128 0x3
+ 246 005e 04       		.byte	0x4
+ 247 005f 05       		.byte	0x5
+ 248 0060 696E7400 		.ascii	"int\000"
+ 249 0064 02       		.uleb128 0x2
+ 250 0065 04       		.byte	0x4
+ 251 0066 07       		.byte	0x7
+ 252 0067 21000000 		.4byte	.LASF8
+ 253 006b 04       		.uleb128 0x4
+ 254 006c 81000000 		.4byte	.LASF9
+ 255 0070 02       		.byte	0x2
+ 256 0071 9201     		.2byte	0x192
+ 257 0073 2C000000 		.4byte	0x2c
+ 258 0077 04       		.uleb128 0x4
+ 259 0078 0E000000 		.4byte	.LASF10
+ 260 007c 02       		.byte	0x2
+ 261 007d 9401     		.2byte	0x194
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 8
+
+
+ 262 007f 48000000 		.4byte	0x48
+ 263 0083 02       		.uleb128 0x2
+ 264 0084 04       		.byte	0x4
+ 265 0085 04       		.byte	0x4
+ 266 0086 4E020000 		.4byte	.LASF11
+ 267 008a 02       		.uleb128 0x2
+ 268 008b 08       		.byte	0x8
+ 269 008c 04       		.byte	0x4
+ 270 008d 7D010000 		.4byte	.LASF12
+ 271 0091 02       		.uleb128 0x2
+ 272 0092 01       		.byte	0x1
+ 273 0093 08       		.byte	0x8
+ 274 0094 BE000000 		.4byte	.LASF13
+ 275 0098 04       		.uleb128 0x4
+ 276 0099 5E020000 		.4byte	.LASF14
+ 277 009d 02       		.byte	0x2
+ 278 009e 3C02     		.2byte	0x23c
+ 279 00a0 A4000000 		.4byte	0xa4
+ 280 00a4 05       		.uleb128 0x5
+ 281 00a5 6B000000 		.4byte	0x6b
+ 282 00a9 04       		.uleb128 0x4
+ 283 00aa DE010000 		.4byte	.LASF15
+ 284 00ae 02       		.byte	0x2
+ 285 00af 3E02     		.2byte	0x23e
+ 286 00b1 B5000000 		.4byte	0xb5
+ 287 00b5 05       		.uleb128 0x5
+ 288 00b6 77000000 		.4byte	0x77
+ 289 00ba 02       		.uleb128 0x2
+ 290 00bb 04       		.byte	0x4
+ 291 00bc 07       		.byte	0x7
+ 292 00bd 63020000 		.4byte	.LASF16
+ 293 00c1 06       		.uleb128 0x6
+ 294 00c2 0C       		.byte	0xc
+ 295 00c3 03       		.byte	0x3
+ 296 00c4 30       		.byte	0x30
+ 297 00c5 EE000000 		.4byte	0xee
+ 298 00c9 07       		.uleb128 0x7
+ 299 00ca 15000000 		.4byte	.LASF17
+ 300 00ce 03       		.byte	0x3
+ 301 00cf 32       		.byte	0x32
+ 302 00d0 6B000000 		.4byte	0x6b
+ 303 00d4 00       		.byte	0
+ 304 00d5 07       		.uleb128 0x7
+ 305 00d6 E3000000 		.4byte	.LASF18
+ 306 00da 03       		.byte	0x3
+ 307 00db 34       		.byte	0x34
+ 308 00dc 77000000 		.4byte	0x77
+ 309 00e0 04       		.byte	0x4
+ 310 00e1 07       		.uleb128 0x7
+ 311 00e2 2E000000 		.4byte	.LASF19
+ 312 00e6 03       		.byte	0x3
+ 313 00e7 35       		.byte	0x35
+ 314 00e8 77000000 		.4byte	0x77
+ 315 00ec 08       		.byte	0x8
+ 316 00ed 00       		.byte	0
+ 317 00ee 08       		.uleb128 0x8
+ 318 00ef B5010000 		.4byte	.LASF20
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 9
+
+
+ 319 00f3 03       		.byte	0x3
+ 320 00f4 3B       		.byte	0x3b
+ 321 00f5 C1000000 		.4byte	0xc1
+ 322 00f9 09       		.uleb128 0x9
+ 323 00fa 6C020000 		.4byte	.LASF21
+ 324 00fe 01       		.byte	0x1
+ 325 00ff 32       		.byte	0x32
+ 326 0100 00000000 		.4byte	.LFB0
+ 327 0104 28000000 		.4byte	.LFE0-.LFB0
+ 328 0108 01       		.uleb128 0x1
+ 329 0109 9C       		.byte	0x9c
+ 330 010a 09       		.uleb128 0x9
+ 331 010b C3000000 		.4byte	.LASF22
+ 332 010f 01       		.byte	0x1
+ 333 0110 4C       		.byte	0x4c
+ 334 0111 00000000 		.4byte	.LFB1
+ 335 0115 28000000 		.4byte	.LFE1-.LFB1
+ 336 0119 01       		.uleb128 0x1
+ 337 011a 9C       		.byte	0x9c
+ 338 011b 0A       		.uleb128 0xa
+ 339 011c 9D010000 		.4byte	.LASF23
+ 340 0120 01       		.byte	0x1
+ 341 0121 69       		.byte	0x69
+ 342 0122 00000000 		.4byte	.LFB2
+ 343 0126 30000000 		.4byte	.LFE2-.LFB2
+ 344 012a 01       		.uleb128 0x1
+ 345 012b 9C       		.byte	0x9c
+ 346 012c 0A       		.uleb128 0xa
+ 347 012d 84010000 		.4byte	.LASF24
+ 348 0131 01       		.byte	0x1
+ 349 0132 80       		.byte	0x80
+ 350 0133 00000000 		.4byte	.LFB3
+ 351 0137 1C000000 		.4byte	.LFE3-.LFB3
+ 352 013b 01       		.uleb128 0x1
+ 353 013c 9C       		.byte	0x9c
+ 354 013d 0B       		.uleb128 0xb
+ 355 013e 68000000 		.4byte	.LASF28
+ 356 0142 01       		.byte	0x1
+ 357 0143 14       		.byte	0x14
+ 358 0144 EE000000 		.4byte	0xee
+ 359 0148 05       		.uleb128 0x5
+ 360 0149 03       		.byte	0x3
+ 361 014a 00000000 		.4byte	Input_SW_ShiftReg_backup
+ 362 014e 00       		.byte	0
+ 363              		.section	.debug_abbrev,"",%progbits
+ 364              	.Ldebug_abbrev0:
+ 365 0000 01       		.uleb128 0x1
+ 366 0001 11       		.uleb128 0x11
+ 367 0002 01       		.byte	0x1
+ 368 0003 25       		.uleb128 0x25
+ 369 0004 0E       		.uleb128 0xe
+ 370 0005 13       		.uleb128 0x13
+ 371 0006 0B       		.uleb128 0xb
+ 372 0007 03       		.uleb128 0x3
+ 373 0008 0E       		.uleb128 0xe
+ 374 0009 1B       		.uleb128 0x1b
+ 375 000a 0E       		.uleb128 0xe
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 10
+
+
+ 376 000b 55       		.uleb128 0x55
+ 377 000c 17       		.uleb128 0x17
+ 378 000d 11       		.uleb128 0x11
+ 379 000e 01       		.uleb128 0x1
+ 380 000f 10       		.uleb128 0x10
+ 381 0010 17       		.uleb128 0x17
+ 382 0011 00       		.byte	0
+ 383 0012 00       		.byte	0
+ 384 0013 02       		.uleb128 0x2
+ 385 0014 24       		.uleb128 0x24
+ 386 0015 00       		.byte	0
+ 387 0016 0B       		.uleb128 0xb
+ 388 0017 0B       		.uleb128 0xb
+ 389 0018 3E       		.uleb128 0x3e
+ 390 0019 0B       		.uleb128 0xb
+ 391 001a 03       		.uleb128 0x3
+ 392 001b 0E       		.uleb128 0xe
+ 393 001c 00       		.byte	0
+ 394 001d 00       		.byte	0
+ 395 001e 03       		.uleb128 0x3
+ 396 001f 24       		.uleb128 0x24
+ 397 0020 00       		.byte	0
+ 398 0021 0B       		.uleb128 0xb
+ 399 0022 0B       		.uleb128 0xb
+ 400 0023 3E       		.uleb128 0x3e
+ 401 0024 0B       		.uleb128 0xb
+ 402 0025 03       		.uleb128 0x3
+ 403 0026 08       		.uleb128 0x8
+ 404 0027 00       		.byte	0
+ 405 0028 00       		.byte	0
+ 406 0029 04       		.uleb128 0x4
+ 407 002a 16       		.uleb128 0x16
+ 408 002b 00       		.byte	0
+ 409 002c 03       		.uleb128 0x3
+ 410 002d 0E       		.uleb128 0xe
+ 411 002e 3A       		.uleb128 0x3a
+ 412 002f 0B       		.uleb128 0xb
+ 413 0030 3B       		.uleb128 0x3b
+ 414 0031 05       		.uleb128 0x5
+ 415 0032 49       		.uleb128 0x49
+ 416 0033 13       		.uleb128 0x13
+ 417 0034 00       		.byte	0
+ 418 0035 00       		.byte	0
+ 419 0036 05       		.uleb128 0x5
+ 420 0037 35       		.uleb128 0x35
+ 421 0038 00       		.byte	0
+ 422 0039 49       		.uleb128 0x49
+ 423 003a 13       		.uleb128 0x13
+ 424 003b 00       		.byte	0
+ 425 003c 00       		.byte	0
+ 426 003d 06       		.uleb128 0x6
+ 427 003e 13       		.uleb128 0x13
+ 428 003f 01       		.byte	0x1
+ 429 0040 0B       		.uleb128 0xb
+ 430 0041 0B       		.uleb128 0xb
+ 431 0042 3A       		.uleb128 0x3a
+ 432 0043 0B       		.uleb128 0xb
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 11
+
+
+ 433 0044 3B       		.uleb128 0x3b
+ 434 0045 0B       		.uleb128 0xb
+ 435 0046 01       		.uleb128 0x1
+ 436 0047 13       		.uleb128 0x13
+ 437 0048 00       		.byte	0
+ 438 0049 00       		.byte	0
+ 439 004a 07       		.uleb128 0x7
+ 440 004b 0D       		.uleb128 0xd
+ 441 004c 00       		.byte	0
+ 442 004d 03       		.uleb128 0x3
+ 443 004e 0E       		.uleb128 0xe
+ 444 004f 3A       		.uleb128 0x3a
+ 445 0050 0B       		.uleb128 0xb
+ 446 0051 3B       		.uleb128 0x3b
+ 447 0052 0B       		.uleb128 0xb
+ 448 0053 49       		.uleb128 0x49
+ 449 0054 13       		.uleb128 0x13
+ 450 0055 38       		.uleb128 0x38
+ 451 0056 0B       		.uleb128 0xb
+ 452 0057 00       		.byte	0
+ 453 0058 00       		.byte	0
+ 454 0059 08       		.uleb128 0x8
+ 455 005a 16       		.uleb128 0x16
+ 456 005b 00       		.byte	0
+ 457 005c 03       		.uleb128 0x3
+ 458 005d 0E       		.uleb128 0xe
+ 459 005e 3A       		.uleb128 0x3a
+ 460 005f 0B       		.uleb128 0xb
+ 461 0060 3B       		.uleb128 0x3b
+ 462 0061 0B       		.uleb128 0xb
+ 463 0062 49       		.uleb128 0x49
+ 464 0063 13       		.uleb128 0x13
+ 465 0064 00       		.byte	0
+ 466 0065 00       		.byte	0
+ 467 0066 09       		.uleb128 0x9
+ 468 0067 2E       		.uleb128 0x2e
+ 469 0068 00       		.byte	0
+ 470 0069 3F       		.uleb128 0x3f
+ 471 006a 19       		.uleb128 0x19
+ 472 006b 03       		.uleb128 0x3
+ 473 006c 0E       		.uleb128 0xe
+ 474 006d 3A       		.uleb128 0x3a
+ 475 006e 0B       		.uleb128 0xb
+ 476 006f 3B       		.uleb128 0x3b
+ 477 0070 0B       		.uleb128 0xb
+ 478 0071 27       		.uleb128 0x27
+ 479 0072 19       		.uleb128 0x19
+ 480 0073 11       		.uleb128 0x11
+ 481 0074 01       		.uleb128 0x1
+ 482 0075 12       		.uleb128 0x12
+ 483 0076 06       		.uleb128 0x6
+ 484 0077 40       		.uleb128 0x40
+ 485 0078 18       		.uleb128 0x18
+ 486 0079 9742     		.uleb128 0x2117
+ 487 007b 19       		.uleb128 0x19
+ 488 007c 00       		.byte	0
+ 489 007d 00       		.byte	0
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 12
+
+
+ 490 007e 0A       		.uleb128 0xa
+ 491 007f 2E       		.uleb128 0x2e
+ 492 0080 00       		.byte	0
+ 493 0081 3F       		.uleb128 0x3f
+ 494 0082 19       		.uleb128 0x19
+ 495 0083 03       		.uleb128 0x3
+ 496 0084 0E       		.uleb128 0xe
+ 497 0085 3A       		.uleb128 0x3a
+ 498 0086 0B       		.uleb128 0xb
+ 499 0087 3B       		.uleb128 0x3b
+ 500 0088 0B       		.uleb128 0xb
+ 501 0089 27       		.uleb128 0x27
+ 502 008a 19       		.uleb128 0x19
+ 503 008b 11       		.uleb128 0x11
+ 504 008c 01       		.uleb128 0x1
+ 505 008d 12       		.uleb128 0x12
+ 506 008e 06       		.uleb128 0x6
+ 507 008f 40       		.uleb128 0x40
+ 508 0090 18       		.uleb128 0x18
+ 509 0091 9642     		.uleb128 0x2116
+ 510 0093 19       		.uleb128 0x19
+ 511 0094 00       		.byte	0
+ 512 0095 00       		.byte	0
+ 513 0096 0B       		.uleb128 0xb
+ 514 0097 34       		.uleb128 0x34
+ 515 0098 00       		.byte	0
+ 516 0099 03       		.uleb128 0x3
+ 517 009a 0E       		.uleb128 0xe
+ 518 009b 3A       		.uleb128 0x3a
+ 519 009c 0B       		.uleb128 0xb
+ 520 009d 3B       		.uleb128 0x3b
+ 521 009e 0B       		.uleb128 0xb
+ 522 009f 49       		.uleb128 0x49
+ 523 00a0 13       		.uleb128 0x13
+ 524 00a1 02       		.uleb128 0x2
+ 525 00a2 18       		.uleb128 0x18
+ 526 00a3 00       		.byte	0
+ 527 00a4 00       		.byte	0
+ 528 00a5 00       		.byte	0
+ 529              		.section	.debug_aranges,"",%progbits
+ 530 0000 34000000 		.4byte	0x34
+ 531 0004 0200     		.2byte	0x2
+ 532 0006 00000000 		.4byte	.Ldebug_info0
+ 533 000a 04       		.byte	0x4
+ 534 000b 00       		.byte	0
+ 535 000c 0000     		.2byte	0
+ 536 000e 0000     		.2byte	0
+ 537 0010 00000000 		.4byte	.LFB0
+ 538 0014 28000000 		.4byte	.LFE0-.LFB0
+ 539 0018 00000000 		.4byte	.LFB1
+ 540 001c 28000000 		.4byte	.LFE1-.LFB1
+ 541 0020 00000000 		.4byte	.LFB2
+ 542 0024 30000000 		.4byte	.LFE2-.LFB2
+ 543 0028 00000000 		.4byte	.LFB3
+ 544 002c 1C000000 		.4byte	.LFE3-.LFB3
+ 545 0030 00000000 		.4byte	0
+ 546 0034 00000000 		.4byte	0
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 13
+
+
+ 547              		.section	.debug_ranges,"",%progbits
+ 548              	.Ldebug_ranges0:
+ 549 0000 00000000 		.4byte	.LFB0
+ 550 0004 28000000 		.4byte	.LFE0
+ 551 0008 00000000 		.4byte	.LFB1
+ 552 000c 28000000 		.4byte	.LFE1
+ 553 0010 00000000 		.4byte	.LFB2
+ 554 0014 30000000 		.4byte	.LFE2
+ 555 0018 00000000 		.4byte	.LFB3
+ 556 001c 1C000000 		.4byte	.LFE3
+ 557 0020 00000000 		.4byte	0
+ 558 0024 00000000 		.4byte	0
+ 559              		.section	.debug_line,"",%progbits
+ 560              	.Ldebug_line0:
+ 561 0000 BB000000 		.section	.debug_str,"MS",%progbits,1
+ 561      02006800 
+ 561      00000201 
+ 561      FB0E0D00 
+ 561      01010101 
+ 562              	.LASF6:
+ 563 0000 6C6F6E67 		.ascii	"long long int\000"
+ 563      206C6F6E 
+ 563      6720696E 
+ 563      7400
+ 564              	.LASF10:
+ 565 000e 75696E74 		.ascii	"uint32\000"
+ 565      333200
+ 566              	.LASF17:
+ 567 0015 656E6162 		.ascii	"enableState\000"
+ 567      6C655374 
+ 567      61746500 
+ 568              	.LASF8:
+ 569 0021 756E7369 		.ascii	"unsigned int\000"
+ 569      676E6564 
+ 569      20696E74 
+ 569      00
+ 570              	.LASF19:
+ 571 002e 73617665 		.ascii	"saveSrA1Reg\000"
+ 571      53724131 
+ 571      52656700 
+ 572              	.LASF26:
+ 573 003a 47656E65 		.ascii	"Generated_Source\\PSoC5\\Input_SW_ShiftReg_PM.c\000"
+ 573      72617465 
+ 573      645F536F 
+ 573      75726365 
+ 573      5C50536F 
+ 574              	.LASF28:
+ 575 0068 496E7075 		.ascii	"Input_SW_ShiftReg_backup\000"
+ 575      745F5357 
+ 575      5F536869 
+ 575      66745265 
+ 575      675F6261 
+ 576              	.LASF9:
+ 577 0081 75696E74 		.ascii	"uint8\000"
+ 577      3800
+ 578              	.LASF5:
+ 579 0087 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 14
+
+
+ 579      20756E73 
+ 579      69676E65 
+ 579      6420696E 
+ 579      7400
+ 580              	.LASF7:
+ 581 0099 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 581      206C6F6E 
+ 581      6720756E 
+ 581      7369676E 
+ 581      65642069 
+ 582              	.LASF1:
+ 583 00b0 756E7369 		.ascii	"unsigned char\000"
+ 583      676E6564 
+ 583      20636861 
+ 583      7200
+ 584              	.LASF13:
+ 585 00be 63686172 		.ascii	"char\000"
+ 585      00
+ 586              	.LASF22:
+ 587 00c3 496E7075 		.ascii	"Input_SW_ShiftReg_RestoreConfig\000"
+ 587      745F5357 
+ 587      5F536869 
+ 587      66745265 
+ 587      675F5265 
+ 588              	.LASF18:
+ 589 00e3 73617665 		.ascii	"saveSrA0Reg\000"
+ 589      53724130 
+ 589      52656700 
+ 590              	.LASF25:
+ 591 00ef 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 591      4320342E 
+ 591      392E3320 
+ 591      32303135 
+ 591      30333033 
+ 592 0122 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 592      20726576 
+ 592      6973696F 
+ 592      6E203232 
+ 592      31323230 
+ 593 0155 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 593      66756E63 
+ 593      74696F6E 
+ 593      2D736563 
+ 593      74696F6E 
+ 594              	.LASF12:
+ 595 017d 646F7562 		.ascii	"double\000"
+ 595      6C6500
+ 596              	.LASF24:
+ 597 0184 496E7075 		.ascii	"Input_SW_ShiftReg_Wakeup\000"
+ 597      745F5357 
+ 597      5F536869 
+ 597      66745265 
+ 597      675F5761 
+ 598              	.LASF23:
+ 599 019d 496E7075 		.ascii	"Input_SW_ShiftReg_Sleep\000"
+ 599      745F5357 
+ 599      5F536869 
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 15
+
+
+ 599      66745265 
+ 599      675F536C 
+ 600              	.LASF20:
+ 601 01b5 496E7075 		.ascii	"Input_SW_ShiftReg_BACKUP_STRUCT\000"
+ 601      745F5357 
+ 601      5F536869 
+ 601      66745265 
+ 601      675F4241 
+ 602              	.LASF4:
+ 603 01d5 6C6F6E67 		.ascii	"long int\000"
+ 603      20696E74 
+ 603      00
+ 604              	.LASF15:
+ 605 01de 72656733 		.ascii	"reg32\000"
+ 605      3200
+ 606              	.LASF3:
+ 607 01e4 73686F72 		.ascii	"short unsigned int\000"
+ 607      7420756E 
+ 607      7369676E 
+ 607      65642069 
+ 607      6E7400
+ 608              	.LASF0:
+ 609 01f7 7369676E 		.ascii	"signed char\000"
+ 609      65642063 
+ 609      68617200 
+ 610              	.LASF27:
+ 611 0203 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\GitHub\\Crumar-Acc"
+ 611      73657273 
+ 611      5C323134 
+ 611      30313635 
+ 611      38365C44 
+ 612 0231 6F646572 		.ascii	"oder-Midi\\Accoder_MIDI.cydsn\000"
+ 612      2D4D6964 
+ 612      695C4163 
+ 612      636F6465 
+ 612      725F4D49 
+ 613              	.LASF11:
+ 614 024e 666C6F61 		.ascii	"float\000"
+ 614      7400
+ 615              	.LASF2:
+ 616 0254 73686F72 		.ascii	"short int\000"
+ 616      7420696E 
+ 616      7400
+ 617              	.LASF14:
+ 618 025e 72656738 		.ascii	"reg8\000"
+ 618      00
+ 619              	.LASF16:
+ 620 0263 73697A65 		.ascii	"sizetype\000"
+ 620      74797065 
+ 620      00
+ 621              	.LASF21:
+ 622 026c 496E7075 		.ascii	"Input_SW_ShiftReg_SaveConfig\000"
+ 622      745F5357 
+ 622      5F536869 
+ 622      66745265 
+ 622      675F5361 
+ 623              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccqFnapc.s 			page 16
+
+

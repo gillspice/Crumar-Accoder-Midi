@@ -139,6 +139,15 @@
   <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\Tabs_4.h" value="HEADER;;;;;Tabs_4" />
   <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\Tabs_4.c" value="SOURCE_C;CortexM3;;;;Tabs_4" />
   <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\Tabs_4_PM.c" value="SOURCE_C;CortexM3;;;;Tabs_4" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\SW_shift_in_aliases.h" value="HEADER;;;;;SW_shift_in" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\SW_shift_in.c" value="SOURCE_C;CortexM3;;;;SW_shift_in" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\SW_shift_in.h" value="HEADER;;;;;SW_shift_in" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\Input_SW_ShiftReg.c" value="SOURCE_C;CortexM3;;;;Input_SW_ShiftReg" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\Input_SW_ShiftReg.h" value="HEADER;;;;;Input_SW_ShiftReg" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\Input_SW_ShiftReg_PM.c" value="SOURCE_C;CortexM3;;;;Input_SW_ShiftReg" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\store_out_aliases.h" value="HEADER;;;;;store_out" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\store_out.c" value="SOURCE_C;CortexM3;;;;store_out" />
+  <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\store_out.h" value="HEADER;;;;;store_out" />
   <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\USB_Dm_aliases.h" value="HEADER;;;;;USB_Dm" />
   <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\USB_Dm.c" value="SOURCE_C;CortexM3;;;;USB_Dm" />
   <file name="C:\Users\214016586\Documents\GitHub\Crumar-Accoder-Midi\Accoder_MIDI.cydsn\codegentemp\USB_Dm.h" value="HEADER;;;;;USB_Dm" />

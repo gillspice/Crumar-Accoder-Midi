@@ -120,20 +120,6 @@ int main()
 
     /* Start USBFS device 0 with VDDD operation */
     USB_Start(DEVICE, USB_DWR_VDDD_OPERATION); 
-    
-    /*Turn on some tabs*/
-//    Tabs_1_Write(0xff);
-//    Tabs_2_Write(0xff);
-//    Tabs_3_Write(0xff);
-//    Tabs_4_Write(0xff);
-    
-//    Chords_Bass_Notes_Write(0xff);
-//    Chords_Notes_Write(0xff);
- //   Bass_Notes_Write(0xff);
-//    Chorus_Speed_Write(0xff);
- //   Control_Reg_10_Write(0xff);
-//   Control_Reg_11_Write(0xff);
-   
 
     while(1u)
     {
@@ -359,7 +345,7 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
     case USB_MIDI_NOTE_ON:   //TAG: This #define assumes channel 1, should parse channel too, have omni option
         if(midiMsg[USB_EVENT_BYTE2] == 0x00)  //TAG: Note On with velocity 0 should be treated like note off
         {
-        switch (midiMsg[USB_EVENT_BYTE1]/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
+        switch ((midiMsg[USB_EVENT_BYTE1]/*-36*/)/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
             {
                 case 0: 
                 
@@ -407,7 +393,7 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
         }
         else    //TAG: Velocity is not zero, turn on note/bit
         {
-            switch (midiMsg[USB_EVENT_BYTE1]/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
+            switch ((midiMsg[USB_EVENT_BYTE1]/*-36*/)/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
             {
                 case 0: 
                 
@@ -458,7 +444,7 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
         
     case USB_MIDI_NOTE_OFF:  // TAG: This #define assumes channel 1, should parse channel too, have omni option
         
-        switch (midiMsg[USB_EVENT_BYTE1]/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
+        switch ((midiMsg[USB_EVENT_BYTE1]/*-36*/)/8) //TAG: Parse the note on messages to the appropriate bit in the Accoder datastream
             {
                 case 0: 
                 
@@ -488,7 +474,19 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
                 case 5:
                 
                    Keys_Notes_6_Write(Keys_Notes_6_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-40)));
-                    break;           
+                    break;  
+                case 6:
+                
+                   Chords_Notes_Write(Chords_Notes_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-48)));
+                   break;    
+                case 7:
+                
+                   Chords_Bass_Notes_Write(Chords_Bass_Notes_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-56)));
+                   break;    
+                case 8:
+                
+                   Bass_Notes_Write(Bass_Notes_Read() & ~(0x01 << (midiMsg[USB_EVENT_BYTE1]-64)));
+                   break;                 
             }
             LED_OutA_Write(0);
             break;
@@ -538,7 +536,17 @@ void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
                     Tabs_4_Write(Tabs_4_Read() | (0x01 << (midiMsg[USB_EVENT_BYTE1]-24)));    
                     }
                     break;
-             
+   
+                case 4:
+                    if (midiMsg[USB_EVENT_BYTE2] < 63)
+                    {
+                    Chorus_Speed_Write(0x00);
+                    }
+                    else
+                    {
+                    Chorus_Speed_Write(0xFF);   
+                    }
+                    break;             
             }
             break;        
     }

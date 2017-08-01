@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
   29:Generated_Source\PSoC5/Chorus_Speed.c **** *
   30:Generated_Source\PSoC5/Chorus_Speed.c **** * Parameters:
   31:Generated_Source\PSoC5/Chorus_Speed.c **** *  control:  The value to be assigned to the Control Register.
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 2
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 2
 
 
   32:Generated_Source\PSoC5/Chorus_Speed.c **** *
@@ -101,7 +101,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
   55              	.L3:
   56 001a 00BF     		.align	2
   57              	.L2:
-  58 001c 75650040 		.word	1073767797
+  58 001c 7A640040 		.word	1073767546
   59              		.cfi_endproc
   60              	.LFE0:
   61              		.size	Chorus_Speed_Write, .-Chorus_Speed_Write
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
   43:Generated_Source\PSoC5/Chorus_Speed.c **** /*******************************************************************************
   44:Generated_Source\PSoC5/Chorus_Speed.c **** * Function Name: Chorus_Speed_Read
   45:Generated_Source\PSoC5/Chorus_Speed.c **** ********************************************************************************
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 3
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 3
 
 
   46:Generated_Source\PSoC5/Chorus_Speed.c **** *
@@ -162,7 +162,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
   93              	.L7:
   94              		.align	2
   95              	.L6:
-  96 0014 75650040 		.word	1073767797
+  96 0014 7A640040 		.word	1073767546
   97              		.cfi_endproc
   98              	.LFE1:
   99              		.size	Chorus_Speed_Read, .-Chorus_Speed_Read
@@ -178,46 +178,46 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  109 000b 01       		.uleb128 0x1
  110 000c 26000000 		.4byte	.LASF14
  111 0010 01       		.byte	0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 4
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 4
 
 
  112 0011 00000000 		.4byte	.LASF15
- 113 0015 B4000000 		.4byte	.LASF16
+ 113 0015 26010000 		.4byte	.LASF16
  114 0019 00000000 		.4byte	.Ldebug_ranges0+0
  115 001d 00000000 		.4byte	0
  116 0021 00000000 		.4byte	.Ldebug_line0
  117 0025 02       		.uleb128 0x2
  118 0026 01       		.byte	0x1
  119 0027 06       		.byte	0x6
- 120 0028 B5010000 		.4byte	.LASF0
+ 120 0028 C1010000 		.4byte	.LASF0
  121 002c 02       		.uleb128 0x2
  122 002d 01       		.byte	0x1
  123 002e 08       		.byte	0x8
- 124 002f F9000000 		.4byte	.LASF1
+ 124 002f BA000000 		.4byte	.LASF1
  125 0033 02       		.uleb128 0x2
  126 0034 02       		.byte	0x2
  127 0035 05       		.byte	0x5
- 128 0036 9C010000 		.4byte	.LASF2
+ 128 0036 A8010000 		.4byte	.LASF2
  129 003a 02       		.uleb128 0x2
  130 003b 02       		.byte	0x2
  131 003c 07       		.byte	0x7
- 132 003d 30010000 		.4byte	.LASF3
+ 132 003d F1000000 		.4byte	.LASF3
  133 0041 02       		.uleb128 0x2
  134 0042 04       		.byte	0x4
  135 0043 05       		.byte	0x5
- 136 0044 AC010000 		.4byte	.LASF4
+ 136 0044 B8010000 		.4byte	.LASF4
  137 0048 02       		.uleb128 0x2
  138 0049 04       		.byte	0x4
  139 004a 07       		.byte	0x7
- 140 004b 0C010000 		.4byte	.LASF5
+ 140 004b CD000000 		.4byte	.LASF5
  141 004f 02       		.uleb128 0x2
  142 0050 08       		.byte	0x8
  143 0051 05       		.byte	0x5
- 144 0052 89010000 		.4byte	.LASF6
+ 144 0052 95010000 		.4byte	.LASF6
  145 0056 02       		.uleb128 0x2
  146 0057 08       		.byte	0x8
  147 0058 07       		.byte	0x7
- 148 0059 72010000 		.4byte	.LASF7
+ 148 0059 7E010000 		.4byte	.LASF7
  149 005d 03       		.uleb128 0x3
  150 005e 04       		.byte	0x4
  151 005f 05       		.byte	0x5
@@ -225,36 +225,36 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  153 0064 02       		.uleb128 0x2
  154 0065 04       		.byte	0x4
  155 0066 07       		.byte	0x7
- 156 0067 65010000 		.4byte	.LASF8
+ 156 0067 71010000 		.4byte	.LASF8
  157 006b 04       		.uleb128 0x4
- 158 006c A6010000 		.4byte	.LASF12
+ 158 006c B2010000 		.4byte	.LASF12
  159 0070 02       		.byte	0x2
  160 0071 9201     		.2byte	0x192
  161 0073 2C000000 		.4byte	0x2c
  162 0077 02       		.uleb128 0x2
  163 0078 04       		.byte	0x4
  164 0079 04       		.byte	0x4
- 165 007a F3000000 		.4byte	.LASF9
+ 165 007a B4000000 		.4byte	.LASF9
  166 007e 02       		.uleb128 0x2
  167 007f 08       		.byte	0x8
  168 0080 04       		.byte	0x4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 5
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 5
 
 
- 169 0081 5E010000 		.4byte	.LASF10
+ 169 0081 1F010000 		.4byte	.LASF10
  170 0085 02       		.uleb128 0x2
  171 0086 01       		.byte	0x1
  172 0087 08       		.byte	0x8
- 173 0088 97010000 		.4byte	.LASF11
+ 173 0088 A3010000 		.4byte	.LASF11
  174 008c 04       		.uleb128 0x4
- 175 008d 07010000 		.4byte	.LASF13
+ 175 008d C8000000 		.4byte	.LASF13
  176 0091 02       		.byte	0x2
  177 0092 3C02     		.2byte	0x23c
  178 0094 98000000 		.4byte	0x98
  179 0098 05       		.uleb128 0x5
  180 0099 6B000000 		.4byte	0x6b
  181 009d 06       		.uleb128 0x6
- 182 009e 4B010000 		.4byte	.LASF17
+ 182 009e 0C010000 		.4byte	.LASF17
  183 00a2 01       		.byte	0x1
  184 00a3 25       		.byte	0x25
  185 00a4 00000000 		.4byte	.LFB0
@@ -263,7 +263,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  188 00ad 9C       		.byte	0x9c
  189 00ae C1000000 		.4byte	0xc1
  190 00b2 07       		.uleb128 0x7
- 191 00b3 43010000 		.4byte	.LASF18
+ 191 00b3 04010000 		.4byte	.LASF18
  192 00b7 01       		.byte	0x1
  193 00b8 25       		.byte	0x25
  194 00b9 6B000000 		.4byte	0x6b
@@ -272,7 +272,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  197 00bf 77       		.sleb128 -9
  198 00c0 00       		.byte	0
  199 00c1 08       		.uleb128 0x8
- 200 00c2 1E010000 		.4byte	.LASF19
+ 200 00c2 DF000000 		.4byte	.LASF19
  201 00c6 01       		.byte	0x1
  202 00c7 39       		.byte	0x39
  203 00c8 6B000000 		.4byte	0x6b
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  223 000c 17       		.uleb128 0x17
  224 000d 11       		.uleb128 0x11
  225 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 6
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 6
 
 
  226 000f 10       		.uleb128 0x10
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  280 0045 0B       		.uleb128 0xb
  281 0046 3B       		.uleb128 0x3b
  282 0047 0B       		.uleb128 0xb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 7
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 7
 
 
  283 0048 27       		.uleb128 0x27
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  337 0080 00       		.byte	0
  338              		.section	.debug_aranges,"",%progbits
  339 0000 24000000 		.4byte	0x24
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 8
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 8
 
 
  340 0004 0200     		.2byte	0x2
@@ -470,96 +470,96 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 1
  368      74696F6E 
  368      2D736563 
  368      74696F6E 
- 369              	.LASF16:
- 370 00b4 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\GitHub\\Accoder\\A"
- 370      73657273 
- 370      5C323134 
- 370      30313635 
- 370      38365C44 
- 371 00e1 63636F64 		.ascii	"ccoder_MIDI.cydsn\000"
- 371      65725F4D 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 9
+ 369              	.LASF9:
+ 370 00b4 666C6F61 		.ascii	"float\000"
+ 370      7400
+ 371              	.LASF1:
+ 372 00ba 756E7369 		.ascii	"unsigned char\000"
+ 372      676E6564 
+ 372      20636861 
+ 372      7200
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 9
 
 
- 371      4944492E 
- 371      63796473 
- 371      6E00
- 372              	.LASF9:
- 373 00f3 666C6F61 		.ascii	"float\000"
- 373      7400
- 374              	.LASF1:
- 375 00f9 756E7369 		.ascii	"unsigned char\000"
- 375      676E6564 
- 375      20636861 
- 375      7200
- 376              	.LASF13:
- 377 0107 72656738 		.ascii	"reg8\000"
- 377      00
- 378              	.LASF5:
- 379 010c 6C6F6E67 		.ascii	"long unsigned int\000"
- 379      20756E73 
- 379      69676E65 
- 379      6420696E 
- 379      7400
- 380              	.LASF19:
- 381 011e 43686F72 		.ascii	"Chorus_Speed_Read\000"
- 381      75735F53 
- 381      70656564 
- 381      5F526561 
- 381      6400
- 382              	.LASF3:
- 383 0130 73686F72 		.ascii	"short unsigned int\000"
- 383      7420756E 
- 383      7369676E 
- 383      65642069 
- 383      6E7400
- 384              	.LASF18:
- 385 0143 636F6E74 		.ascii	"control\000"
- 385      726F6C00 
- 386              	.LASF17:
- 387 014b 43686F72 		.ascii	"Chorus_Speed_Write\000"
- 387      75735F53 
- 387      70656564 
- 387      5F577269 
- 387      746500
- 388              	.LASF10:
- 389 015e 646F7562 		.ascii	"double\000"
- 389      6C6500
+ 373              	.LASF13:
+ 374 00c8 72656738 		.ascii	"reg8\000"
+ 374      00
+ 375              	.LASF5:
+ 376 00cd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 376      20756E73 
+ 376      69676E65 
+ 376      6420696E 
+ 376      7400
+ 377              	.LASF19:
+ 378 00df 43686F72 		.ascii	"Chorus_Speed_Read\000"
+ 378      75735F53 
+ 378      70656564 
+ 378      5F526561 
+ 378      6400
+ 379              	.LASF3:
+ 380 00f1 73686F72 		.ascii	"short unsigned int\000"
+ 380      7420756E 
+ 380      7369676E 
+ 380      65642069 
+ 380      6E7400
+ 381              	.LASF18:
+ 382 0104 636F6E74 		.ascii	"control\000"
+ 382      726F6C00 
+ 383              	.LASF17:
+ 384 010c 43686F72 		.ascii	"Chorus_Speed_Write\000"
+ 384      75735F53 
+ 384      70656564 
+ 384      5F577269 
+ 384      746500
+ 385              	.LASF10:
+ 386 011f 646F7562 		.ascii	"double\000"
+ 386      6C6500
+ 387              	.LASF16:
+ 388 0126 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\GitHub\\Crumar-Acc"
+ 388      73657273 
+ 388      5C323134 
+ 388      30313635 
+ 388      38365C44 
+ 389 0154 6F646572 		.ascii	"oder-Midi\\Accoder_MIDI.cydsn\000"
+ 389      2D4D6964 
+ 389      695C4163 
+ 389      636F6465 
+ 389      725F4D49 
  390              	.LASF8:
- 391 0165 756E7369 		.ascii	"unsigned int\000"
+ 391 0171 756E7369 		.ascii	"unsigned int\000"
  391      676E6564 
  391      20696E74 
  391      00
  392              	.LASF7:
- 393 0172 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 393 017e 6C6F6E67 		.ascii	"long long unsigned int\000"
  393      206C6F6E 
  393      6720756E 
  393      7369676E 
  393      65642069 
  394              	.LASF6:
- 395 0189 6C6F6E67 		.ascii	"long long int\000"
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccE1J8l3.s 			page 10
+ 395 0195 6C6F6E67 		.ascii	"long long int\000"
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccHJ9ARg.s 			page 10
 
 
  395      206C6F6E 
  395      6720696E 
  395      7400
  396              	.LASF11:
- 397 0197 63686172 		.ascii	"char\000"
+ 397 01a3 63686172 		.ascii	"char\000"
  397      00
  398              	.LASF2:
- 399 019c 73686F72 		.ascii	"short int\000"
+ 399 01a8 73686F72 		.ascii	"short int\000"
  399      7420696E 
  399      7400
  400              	.LASF12:
- 401 01a6 75696E74 		.ascii	"uint8\000"
+ 401 01b2 75696E74 		.ascii	"uint8\000"
  401      3800
  402              	.LASF4:
- 403 01ac 6C6F6E67 		.ascii	"long int\000"
+ 403 01b8 6C6F6E67 		.ascii	"long int\000"
  403      20696E74 
  403      00
  404              	.LASF0:
- 405 01b5 7369676E 		.ascii	"signed char\000"
+ 405 01c1 7369676E 		.ascii	"signed char\000"
  405      65642063 
  405      68617200 
  406              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
